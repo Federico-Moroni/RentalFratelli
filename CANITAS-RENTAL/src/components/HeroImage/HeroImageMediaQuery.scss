@@ -1,0 +1,254 @@
+// X-LARGE DEVICES [XL]
+@media all and (min-width: 1200px) {
+    .HeroImageContainer {
+        height: 100vh;
+
+        .HeroCol {
+            padding: 0;
+            height: 100vh;
+
+            .GlassEffectContainer {
+                width: 40vw;
+                height: 100vh;
+                margin-left: 2em;
+                padding-top: 2.2%;
+
+                .GlassEffect {
+                    height: 80vh;
+                    width: 40vw;
+                    border-radius: 1em;
+                    box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 16px;
+                }
+            }
+
+            .HeroTextContent {
+                width: 40vw;
+                margin-top: 41.2vh;
+                margin-left: 2em;
+
+                .H1 {
+                    font-size: 4em;
+                    width: 40vw;
+                }
+
+                .Intro {
+                    font-size: .8em;
+                    width: 40vw;
+                    margin-top: 3%;
+                    padding: 0 15%;
+                }
+            }
+
+            .HeroImg {
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+    }
+}
+
+// LARGE DEVICES [LG]
+@media all and (min-width: 993px) and (max-width: 1199px) {
+    .HeroImageContainer {
+        height: 100vh;
+
+        .HeroCol {
+            padding: 0;
+            height: 100vh;
+
+            .GlassEffectContainer {
+                width: 40vw;
+                height: 100vh;
+                margin-left: 2em;
+                padding-top: 2.2%;
+
+                .GlassEffect {
+                    height: 80vh;
+                    width: 40vw;
+                    border-radius: 1em;
+                    box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 16px;
+                }
+            }
+
+            .HeroTextContent {
+                width: 40vw;
+                margin-top: 41.2vh;
+                margin-left: 2em;
+
+                .H1 {
+                    font-size: 3.5em;
+                    width: 40vw;
+                }
+
+                .Intro {
+                    font-size: .8em;
+                    width: 40vw;
+                    margin-top: 3%;
+                    padding: 0 15%;
+                }
+            }
+
+            .HeroImg {
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+    }
+}
+
+// MEDIUM DEVICES [MD]
+@media all and (min-width: 769px) and (max-width: 992px) {
+    .HeroImageContainer {
+        height: 100vh;
+
+        .HeroCol {
+            padding: 0;
+            height: 100vh;
+
+            .GlassEffectContainer {
+                width: 50vw;
+                height: 100vh;
+                margin-left: 2em;
+                padding-top: 5%;
+
+                .GlassEffect {
+                    height: 80vh;
+                    width: 50vw;
+                    border-radius: 1em;
+                    box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 16px;
+                }
+            }
+
+            .HeroTextContent {
+                width: 50vw;
+                margin-top: 44vh;
+                margin-left: 2em;
+
+                .H1 {
+                    font-size: 3.5em;
+                    width: 50vw;
+                }
+
+                .Intro {
+                    font-size: .8em;
+                    width: 50vw;
+                    margin-top: 3%;
+                    padding: 0 15%;
+                }
+            }
+
+            .HeroImg {
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+    }
+}
+
+// SMALL DEVICES [SM]
+@media all and (min-width: 577px) and (max-width: 768px) {
+    .HeroImageContainer {
+        height: 100vh;
+
+        .HeroCol {
+            padding: 0;
+            height: 100vh;
+
+            .GlassEffectContainer {
+                display: none;
+            }
+
+            .HeroTextContent {
+                display: flex;
+                justify-content: center;
+                width: 100vw;
+                margin-top: 40vh;
+
+                .H1 {
+                    font-size: 4em;
+                }
+
+                .Intro {
+                    display: none;
+                }
+            }
+
+            .HeroImg {
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+    }
+}
+
+// XS DEVICES [-]
+@media all and (min-width: 415px) and (max-width: 576px) {
+    .HeroImageContainer {
+        height: 100vh;
+
+        .HeroCol {
+            padding: 0;
+            height: 100vh;
+
+            .GlassEffectContainer {
+                display: none;
+            }
+
+            .HeroTextContent {
+                display: flex;
+                justify-content: center;
+                width: 100vw;
+                margin-top: 45vh;
+
+                .H1 {
+                    font-size: 3.5em;
+                }
+
+                .Intro {
+                    display: none;
+                }
+            }
+
+            .HeroImg {
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+    }
+}
+
+// IPHONE 6/7/8 PLUS DEVICES [AN EXCEPTION]
+@media all and (max-width: 414px) {
+    .HeroImageContainer {
+        height: 100vh;
+
+        .HeroCol {
+            padding: 0;
+            height: 100vh;
+
+            .GlassEffectContainer {
+                display: none;
+            }
+
+            .HeroTextContent {
+                display: flex;
+                justify-content: center;
+                width: 100vw;
+                margin-top: 40vh;
+
+                .H1 {
+                    font-size: 3.1em;
+                }
+
+                .Intro {
+                    display: none;
+                }
+            }
+
+            .HeroImg {
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+    }
+}

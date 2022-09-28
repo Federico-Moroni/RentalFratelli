@@ -1,0 +1,167 @@
+// X-LARGE DEVICES [XL]
+@media all and (min-width: 1200px) {
+    .NavbarContainer {
+        z-index: 1;
+        padding-top: 2vh;
+
+        .NavbarRow {
+            width: 100%;
+
+            .NavbarColumn {
+                height: 3em;
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+
+                .NavbarUl {
+                    height: 3em;
+                    padding-left: 0;
+                    width: 60%;
+
+                    .NavbarLi,
+                    .NavbarLiModal {
+                        font-size: .9em;
+                        margin-bottom: 1.5%;
+                    }
+                }
+            }
+
+            .BurgerMenuLabel {
+                display: none;
+            }
+        }
+    }
+}
+
+// LARGE DEVICES [LG]
+@media all and (min-width: 993px) and (max-width: 1199px) {
+    .NavbarContainer {
+        z-index: 1;
+        padding-top: 2vh;
+
+        .NavbarRow {
+            width: 100%;
+
+            .NavbarColumn {
+                height: 3em;
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+
+                .NavbarUl {
+                    height: 3em;
+                    padding-left: 0;
+                    width: 60%;
+
+                    .NavbarLi,
+                    .NavbarLiModal {
+                        font-size: .9em;
+                        margin-bottom: 1.5%;
+                    }
+                }
+            }
+
+            .BurgerMenuLabel {
+                display: none;
+            }
+        }
+    }
+}
+
+// MEDIUM DEVICES [MD]
+@media all and (min-width: 769px) and (max-width: 992px) {
+    .NavbarContainer {
+        z-index: 1;
+        padding-top: 2vh;
+
+        .NavbarRow {
+            width: 100%;
+
+            .NavbarColumn {
+                height: 3.5em;
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+
+                .NavbarUl {
+                    height: 3.5em;
+                    padding-left: 0;
+                    width: 100%;
+
+                    .NavbarLi,
+                    .NavbarLiModal {
+                        font-size: 0.8em;
+                        margin-bottom: 1.5%;
+                    }
+                }
+            }
+
+            .BurgerMenuLabel {
+                display: none;
+            }
+        }
+    }
+}
+
+// SMALL DEVICES [SM]
+@media all and (min-width: 577px) and (max-width: 768px) {
+    .NavbarContainer {
+        z-index: 1;
+        padding-top: 2vh;
+
+        .NavbarRow {
+            width: 100%;
+
+            .NavbarColumn {
+                display: none;
+            }
+
+            .BurgerMenuLabel {
+                margin-top: 17vh;
+                padding-left: 50vw;
+            }
+        }
+    }
+}
+
+// XS DEVICES [-]
+@media all and (min-width: 415px) and (max-width: 576px) {
+    .NavbarContainer {
+        z-index: 1;
+        padding-top: 2vh;
+
+        .NavbarRow {
+            width: 100%;
+
+            .NavbarColumn {
+                display: none;
+            }
+
+            .BurgerMenuLabel {
+                margin-top: 17vh;
+                padding-left: 50vw;
+            }
+        }
+    }
+}
+
+// IPHONE 6/7/8 PLUS DEVICES [AN EXCEPTION]
+@media all and (max-width: 414px) {
+    .NavbarContainer {
+        z-index: 1;
+        padding-top: 2vh;
+
+        .NavbarRow {
+            width: 100%;
+
+            .NavbarColumn {
+                display: none;
+            }
+
+            .BurgerMenuLabel {
+                margin-top: 17vh;
+                padding-left: 50vw;
+            }
+        }
+    }
+}

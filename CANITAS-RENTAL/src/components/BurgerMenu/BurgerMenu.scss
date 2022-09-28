@@ -1,0 +1,170 @@
+.BurgerMenu {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-top: -20px;
+
+    .BurgerMenuCheckbox {
+        display: none;
+    }
+
+    .BurgerMenuCheckbox:checked~.BurgerMenuContent {
+        opacity: 1;
+        visibility: visible;
+        width: 100vw;
+        backdrop-filter: blur(10px);
+        box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 12px;
+        background-color: rgba(0, 0, 0, 0.141);
+    }
+
+    .BurgerMenuCheckbox:checked+.BurgerMenuButton .BurgerMenuBars {
+        background: transparent;
+    }
+
+    .BurgerMenuCheckbox:checked+.BurgerMenuButton .BurgerMenuBars::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    .BurgerMenuCheckbox:checked+.BurgerMenuButton .BurgerMenuBars::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+    .BurgerMenuButton {
+        // position: fixed;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        top: 20px;
+        right: 40px;
+        z-index: 2000;
+        margin-top: -90px;
+
+        .BurgerMenuBars {
+            position: relative;
+            margin-top: 35px;
+        }
+
+        .BurgerMenuBars,
+        .BurgerMenuBars::before,
+        .BurgerMenuBars::after {
+            width: 25px;
+            height: 1.5px;
+            background: #ffffff;
+            display: inline-block;
+        }
+
+        .BurgerMenuBars::before,
+        .BurgerMenuBars::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all 0.2s;
+        }
+
+        .BurgerMenuBars::before {
+            top: -10px;
+        }
+
+        .BurgerMenuBars::after {
+            top: 10px;
+        }
+    }
+
+    .BurgerMenuButton:hover .BurgerMenuBars::before {
+        top: -12px;
+    }
+
+    .BurgerMenuButton:hover .BurgerMenuBars::after {
+        top: 12px;
+    }
+
+    .BurgerMenuContent {
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.256, 1.55);
+
+        .BurgerMenuList {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            list-style: none;
+            text-align: center;
+            width: 100%;
+
+            .BurgerMenuLink {
+                font-size: 20px;
+                font-weight: 700;
+                padding: 20px;
+                text-transform: uppercase;
+                color: white;
+
+                a {
+                    font-size: .8em;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: white;
+                    transition: all 0.4s;
+                    padding: 0.7em;
+                    position: relative;
+                    background:
+                        linear-gradient(currentColor 0 0) 0 0,
+                        linear-gradient(currentColor 0 0) 0 0,
+                        linear-gradient(currentColor 0 0) 0 100%,
+                        linear-gradient(currentColor 0 0) 0 100%,
+                        linear-gradient(currentColor 0 0) 100% 0,
+                        linear-gradient(currentColor 0 0) 100% 0,
+                        linear-gradient(currentColor 0 0) 100% 100%,
+                        linear-gradient(currentColor 0 0) 100% 100%;
+                    background-size: var(--d, 0) 1px, 1px var(--d, 0);
+                    background-repeat: no-repeat;
+                }
+
+                button {
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                    font-weight: 900;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                }
+            }
+
+            a:hover {
+                color: white;
+                --d: 10px;
+            }
+
+            a::before {
+                transform: scaleX(0);
+                transform-origin: bottom right;
+            }
+
+            a:hover::before {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+
+            a::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                inset: 0 0 0 0;
+                z-index: -1;
+                transition: transform .3s ease;
+            }
+        }
+    }
+}

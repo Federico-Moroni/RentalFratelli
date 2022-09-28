@@ -1,0 +1,14 @@
+.ActivitiesContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    --bs-gutter-x: 0;
+    background-color: black;
+    .ActivitiesImgWrapper{
+        width: 100vw;
+        height: 700px;
+        margin: 0 auto;
+    }
+}

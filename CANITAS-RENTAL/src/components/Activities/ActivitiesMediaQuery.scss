@@ -1,0 +1,83 @@
+// X-LARGE DEVICES [XL]
+@media all and (min-width: 1200px) {
+    .ActivitiesContainer {
+        height: 100vh;
+        z-index: -5;
+        --bs-gutter-x: 0;
+
+        .ActivitiesImgWrapper {
+            height: 100vh;
+            padding-top: 12vh;
+        }
+    }
+}
+
+// LARGE DEVICES [LG]
+@media all and (min-width: 993px) and (max-width: 1199px) {
+    .ActivitiesContainer {
+        height: 100vh;
+        z-index: -5;
+        --bs-gutter-x: 0;
+
+        .ActivitiesImgWrapper {
+            height: 100vh;
+            padding-top: 15vh;
+        }
+    }
+}
+
+// MEDIUM DEVICES [MD]
+@media all and (min-width: 769px) and (max-width: 992px) {
+    .ActivitiesContainer {
+        height: 100vh;
+        z-index: -5;
+        --bs-gutter-x: 0;
+
+        .ActivitiesImgWrapper {
+            height: 100vh;
+            padding-top: 15vh;
+        }
+    }
+}
+
+// SMALL DEVICES [SM]
+@media all and (min-width: 577px) and (max-width: 768px) {
+    .ActivitiesContainer {
+        height: 100vh;
+        z-index: -5;
+        --bs-gutter-x: 0;
+
+        .ActivitiesImgWrapper {
+            height: 100vh;
+            padding-top: 13vh;
+        }
+    }
+}
+
+// XS DEVICES [-]
+@media all and (min-width: 415px) and (max-width: 576px) {
+    .ActivitiesContainer {
+        height: 100vh;
+        z-index: -5;
+        --bs-gutter-x: 0;
+
+        .ActivitiesImgWrapper {
+            height: 100vh;
+            padding-top: 10vh;
+        }
+    }
+}
+
+// IPHONE 6/7/8 PLUS DEVICES [AN EXCEPTION]
+@media all and (max-width: 414px) {
+    .ActivitiesContainer {
+        height: 100vh;
+        z-index: -5;
+        --bs-gutter-x: 0;
+
+        .ActivitiesImgWrapper {
+            height: 100vh;
+            padding-top: 10vh;
+        }
+    }
+}

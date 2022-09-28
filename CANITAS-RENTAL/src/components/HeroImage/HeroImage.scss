@@ -1,0 +1,82 @@
+.HeroImageContainer {
+    overflow: hidden;
+
+    .HeroCol {
+        position: relative;
+        display: flex;
+        justify-content: left;
+
+        .GlassEffectContainer {
+            position: absolute;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            .GlassEffect {
+                backdrop-filter: blur(3px);
+                background-color: rgba(255, 255, 255, 0.09);
+            }
+        }
+
+        .HeroTextContent {
+            position: absolute;
+            text-align: left;
+            color: white;
+
+            .H1 {
+                font-family: romantica;
+                display: flex;
+                justify-content: center;
+                text-shadow: 10px 10px 25px rgb(0, 0, 0),
+                    -10px 10px 25px rgb(0, 0, 0),
+                    -10px -10px 25px rgb(0, 0, 0),
+                    10px -10px 25px rgb(0, 0, 0);
+            }
+
+            // .SubtitleH1 {
+            //     display: flex;
+            //     justify-content: center;
+            //     width: 40%;
+            //     padding-top: 1%;
+            //     font-weight: bold;
+            // }
+            .Intro {
+                text-align: justify;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        .HeroImg {
+            object-fit: cover;
+            filter: brightness(80%);
+        }
+    }
+}
+
+@keyframes transp {
+    0% {
+        color: transparent;
+    }
+
+    50% {
+        color: transparent;
+    }
+}
+
+@keyframes openclose {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}

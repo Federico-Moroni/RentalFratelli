@@ -1,0 +1,36 @@
+.NavbarContainer {
+    position: absolute;
+    font-weight: bold;
+    color: white;
+
+    .NavbarRow {
+        .NavbarColumn {
+            display: flex;
+            justify-content: end;
+
+            .NavbarUl {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-evenly;
+                list-style: none;
+
+                .NavbarLi,
+                .NavbarLiModal {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                .NavbarLi:hover {
+                    transition: 0.8s linear;
+                    border-bottom: 1px solid white;
+                }
+
+                .NavbarLiModal:hover {
+                    transition: 0.8s linear;
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+}

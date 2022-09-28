@@ -1,0 +1,45 @@
+Desde terminal con scope en la carpeta que CONTENGA a CANITAS-RENTAL, corremos:
+
+- npm init
+
+(Enter a todo excepto en description (form) y author(name)) y asi se instala el package.json afuera.
+
+Ahora tenemos que correr en consola: 
+
+- npm i nodemailer body-parser cors nodemon concurrently express
+
+Asi se me va a armar el file package-lock.json, node_modules y en el package.json se van a haber instalado todas las dependences.
+
+Ahora, manteniendo el scope FUERA del cliente (CANITAS-RENTAL), creamos un file index.js que va a ser nuestro SERVER.
+
+Ahora vamos adentro de CANITAS-RENTAL (client) => App.js
+
+Ahora en consola ponemos el scope DENTRO de CANITAS-RENTAL => cd CANITAS-RENTAL y en consola:
+
+- npm start (renderizamos)
+
+Ahora DENTRO de CANITAS-RENTAL en carpeta src, creamos un archivo llamado Form.js (lo hace aislado pero seguro se puede dentro de componentes, el porque no tiene carpeta de componentes).
+
+Dentro del file escribimos RCC (como rfce) que nos genera un class based component y lo importamos en App.js (Como dije, poner dentro de componentes). Ahora en el return empezamos a generar el form.
+
+Ahora cuando tenemos el form listo, vamos dentro del Form pero antes del render() (donde ponemos el codigo de js) empezamos a crear las funciones para extraer los datos.
+
+Despues de un rato haciendo eso, vamos a la consola y frenamos el server CTRL+C y damos 'Y'. Luego:
+
+- npm i axios (es para hacer API's calls) en el SCOPE de CANITAS-RENTAL (client)
+
+Buscamos el package.json y despues de la linea que dice "private" creamos una que diga "proxy":"http://localhost:3001" despues habria que ver si esto deberiamos cambiarlo a la pagina hosteada.
+
+Despues en Form.js file vamos a import axios from 'axios' y corremos de nuevo npm start
+
+Ahora vamos a hacer el formSubmit function en el file Form.js y todo eso.
+
+Una vez que terminamos eso, vamos index.js DEL LADO DEL SERVIDOR, no del cliente. Ahi vamos a crear una const express = require('express'), igual bodyparser, igual nodemailer y cors.
+
+Una vez que armamos todo eso en el index.js del lado del SERVIDOR! vamos a package.json y eliminamos la linea "test" dentro de scripts y escribimos "start":"node index.js", "server":"nodemon index.js","cliente":"npm start --prefix client","dev":"concurrently \"npm run server\" \" npm run client\""
+
+Despues de eso vamos a frenar de nuevo la terminar con CTRL+C y 'y', despues cd.. para volver a la carpeta que aloja el cliente y los archivos del servidor y ahi vamos a (aca se olvido en Form.js de la linea donde esta msg (al ultimo), poner el classname y algunas cosas ahi). Acomodamos eso y ahora si, con scope desde el Servidor:
+
+- npm run dev
+
+Ahi el server comienza a funcinar. Se olvido de poner dentro del tag form en Form.js el onSubmit={this.formSubmit}. No le funciona porque al final de index.js SERVIDOR se olvido de poner el PORT listener.

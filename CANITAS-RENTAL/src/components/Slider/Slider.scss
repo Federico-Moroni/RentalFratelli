@@ -1,0 +1,56 @@
+.slides {
+    display: grid;
+    align-items: center;
+
+    .slide[data-active] {
+        pointer-events: auto;
+        z-index: 2;
+
+        // Foto Activa
+        .slideContent {
+            &:hover {
+                transition: none;
+            }
+        }
+    }
+
+    >button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        appearance: none;
+        background: transparent;
+        border: none;
+        color: white;
+        position: relative;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .slideContent {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: transform 0.5s ease-in-out;
+        display: grid;
+        align-content: flex-end;
+        transform-style: preserve-3d;
+
+        .slideContentInner {
+            color: white;
+
+            .slideSubtitle,
+            .slideTitle {
+                font-weight: normal;
+                text-transform: uppercase;
+                text-shadow: 2px 2px #5d5d5d;
+            }
+
+            .slideSubtitle::before {
+                content: "— ";
+            }
+        }
+    }
+}

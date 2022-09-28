@@ -1,0 +1,10 @@
+git init
+
+git checkout -b 'NewBranchName' (Creates a new branch called NewBranchName and switch from master to that branch)
+git checkout 'branchName' (Cambiar de branch)
+
+git add .
+
+git commit -m 'Message'
+
+git push --set-upstream origin NewBranchName

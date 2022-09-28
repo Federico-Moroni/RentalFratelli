@@ -1,0 +1,535 @@
+// // X-LARGE DEVICES [XL]
+@media all and (min-width: 1200px) {
+    .HomeFormContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .HomeFormRow {
+            max-width: 80vw;
+
+            .HomeForm {
+                display: flex;
+                justify-content: center;
+                // align-items: flex-end;
+                //                 // height: 10vh;
+
+                .CustomField {
+                    position: relative;
+                    font-size: 14px;
+                    padding-top: 20px;
+
+                    input {
+                        border: none;
+                        -webkit-appearance: none;
+                        -ms-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        outline: none;
+                        background-color: whitesmoke;
+                        border: 1px solid white;
+                        padding: 10px;
+                        border-radius: 3px;
+                        width: 98%;
+                        font-size: 14px;
+                    }
+
+                    .Placeholder {
+                        position: absolute;
+                        font-weight: bold;
+                        color: #aaa;
+                        z-index: 2;
+                        left: 12px;
+                        top: calc(50% + 10px);
+                        transform: translateY(-50%);
+                        transition:
+                            top 0.3s ease,
+                            color 0.3s ease,
+                            font-size 0.3s ease;
+                    }
+                }
+
+                // .CustomField input:valid + .Placeholder,
+                .CustomField input:focus+.Placeholder {
+                    color: grey;
+                    font-weight: bold;
+                    top: 0px;
+                    font-size: 12px;
+                }
+
+                .HomeFormBtn {
+                    // // background-color: black;
+                    // outline: none;
+                    // border: 1px solid white;
+                    // text-decoration: none;
+                    // color: white;
+                    // cursor: pointer;
+                    // font-weight: bold;
+                    // // padding: 10px;
+                    // border-radius: 3px;
+                    // width: 98%;
+                    // font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// LARGE DEVICES [LG]
+@media all and (min-width: 993px) and (max-width: 1199px) {
+    .HomeFormContainer {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+
+        .HomeFormRow {
+            max-width: 80vw;
+
+            .HomeForm {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                // height: 45vh;
+
+                .CustomField {
+                    position: relative;
+                    font-size: 14px;
+                    padding-top: 20px;
+
+                    input {
+                        border: none;
+                        -webkit-appearance: none;
+                        -ms-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        outline: none;
+                        background-color: whitesmoke;
+                        border: 1px solid white;
+                        padding: 10px;
+                        border-radius: 3px;
+                        width: 98%;
+                        font-size: 14px;
+                    }
+
+                    .Placeholder {
+                        position: absolute;
+                        font-weight: bold;
+                        color: #aaa;
+                        z-index: 2;
+                        left: 12px;
+                        top: calc(50% + 10px);
+                        transform: translateY(-50%);
+                        transition:
+                            top 0.3s ease,
+                            color 0.3s ease,
+                            font-size 0.3s ease;
+                    }
+                }
+
+                // .CustomField input:valid + .Placeholder,
+                .CustomField input:focus+.Placeholder {
+                    color: white;
+                    font-weight: bold;
+                    top: 0px;
+                    font-size: 12px;
+                }
+
+                .HomeFormBtn {
+                    background-color: black;
+                    outline: none;
+                    border: 1px solid white;
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: bold;
+                    border-radius: 3px;
+                    width: 98%;
+                    font-size: 14px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+// MEDIUM DEVICES [MD]
+@media all and (min-width: 769px) and (max-width: 992px) {
+    .HomeFormContainer {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+
+        .HomeFormRow {
+            max-width: 85vw;
+
+            .HomeForm {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                // height: 45vh;
+
+                .CustomField {
+                    position: relative;
+                    font-size: 13px;
+                    padding-top: 20px;
+
+                    input {
+                        border: none;
+                        -webkit-appearance: none;
+                        -ms-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        outline: none;
+                        background-color: whitesmoke;
+                        border: 1px solid white;
+                        padding: 10px;
+                        border-radius: 3px;
+                        width: 98%;
+                        font-size: 13px;
+                    }
+
+                    .Placeholder {
+                        position: absolute;
+                        font-weight: bold;
+                        color: #aaa;
+                        z-index: 2;
+                        left: 12px;
+                        top: calc(50% + 10px);
+                        transform: translateY(-50%);
+                        transition:
+                            top 0.3s ease,
+                            color 0.3s ease,
+                            font-size 0.3s ease;
+                    }
+                }
+
+                // .CustomField input:valid + .Placeholder,
+                .CustomField input:focus+.Placeholder {
+                    color: white;
+                    font-weight: bold;
+                    top: 0px;
+                    font-size: 12px;
+                }
+
+                .HomeFormBtn {
+                    background-color: black;
+                    outline: none;
+                    border: 1px solid white;
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: bold;
+                    border-radius: 3px;
+                    width: 98%;
+                    font-size: 13px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+// SMALL DEVICES [SM]
+@media all and (min-width: 577px) and (max-width: 768px) {
+    .HomeFormContainer {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://res.cloudinary.com/dfprmjlir/image/upload/v1662945204/CANITAS%20RENTAL/pexels-erik-mclean-7547526_hqsptw.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+
+        .HomeFormRow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 12px;
+            background-color: rgba(0, 0, 0, 0.1);
+            height: 70vh;
+            width: 70%;
+            border-radius: .7em;
+
+            .HomeForm {
+                .HomeFormTags {
+                    position: relative;
+                    padding: 15px 0 0;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    .CustomField {
+                        .input {
+                            color: white;
+                            background: transparent;
+                            transition: border-color 0.2s;
+                            width: 100%;
+                            border: 0;
+                            border-bottom: 1px solid white;
+                            outline: 0;
+                            font-size: 1rem;
+                            padding: 7px 0;
+
+                            &:placeholder-shown~.Placeholder {
+                                font-size: 1rem;
+                                top: 20px;
+                                cursor: text;
+                            }
+
+                            &::placeholder {
+                                color: transparent;
+                            }
+                        }
+
+                        .input:focus {
+                            border-image: linear-gradient(to right, white, blue);
+                            padding-bottom: 6px;
+                            font-weight: 700;
+                            border-width: 1px;
+                            border-image-slice: 1;
+
+                            ~.Placeholder {
+                                position: absolute;
+                                display: block;
+                                transition: 0.2s;
+                                color: white;
+                                top: 0;
+                                font-size: 1rem;
+                                font-weight: 700;
+                            }
+                        }
+
+                        .Placeholder {
+                            position: absolute;
+                            display: block;
+                            transition: 0.2s;
+                            color: white;
+                            top: 0;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .HomeFormBtn {
+                    outline: none;
+                    border: 1px solid white;
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: bold;
+                    background: rgba(255, 255, 255, 0.415);
+                    margin-top: 5%;
+                    padding: .4em;
+                    border-radius: .4em;
+                    font-size: .9rem;
+                    width: 12.5em;
+                }
+            }
+        }
+    }
+}
+
+// XS DEVICES [-]
+@media all and (min-width: 415px) and (max-width: 576px) {
+    .HomeFormContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://res.cloudinary.com/dfprmjlir/image/upload/v1662945204/CANITAS%20RENTAL/pexels-erik-mclean-7547526_hqsptw.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        height: 100vh;
+
+        .HomeFormRow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 12px;
+            background-color: rgba(0, 0, 0, 0.1);
+            height: 80vh;
+            width: 80%;
+            border-radius: .7em;
+
+            .HomeForm {
+                .HomeFormTags {
+                    position: relative;
+                    padding: 15px 0 0;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    .CustomField {
+                        .input {
+                            color: white;
+                            background: transparent;
+                            transition: border-color 0.2s;
+                            width: 100%;
+                            border: 0;
+                            border-bottom: 1px solid white;
+                            outline: 0;
+                            font-size: 1rem;
+                            padding: 7px 0;
+
+                            &:placeholder-shown~.Placeholder {
+                                font-size: 1rem;
+                                top: 20px;
+                                cursor: text;
+                            }
+
+                            &::placeholder {
+                                color: transparent;
+                            }
+                        }
+
+                        .input:focus {
+                            border-image: linear-gradient(to right, white, blue);
+                            padding-bottom: 6px;
+                            font-weight: 700;
+                            border-width: 1px;
+                            border-image-slice: 1;
+
+                            ~.Placeholder {
+                                position: absolute;
+                                display: block;
+                                transition: 0.2s;
+                                color: white;
+                                top: 0;
+                                font-size: 1rem;
+                                font-weight: 700;
+                            }
+                        }
+
+                        .Placeholder {
+                            position: absolute;
+                            display: block;
+                            transition: 0.2s;
+                            color: white;
+                            top: 0;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .HomeFormBtn {
+                    outline: none;
+                    border: 1px solid white;
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: bold;
+                    background: rgba(255, 255, 255, 0.415);
+                    padding: .4em;
+                    border-radius: .4em;
+                    font-size: .9rem;
+                    width: 12.5em;
+                }
+            }
+        }
+    }
+}
+
+// IPHONE 6/7/8 PLUS DEVICES [AN EXCEPTION]
+@media all and (max-width: 414px) {
+    .HomeFormContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://res.cloudinary.com/dfprmjlir/image/upload/v1662945204/CANITAS%20RENTAL/pexels-erik-mclean-7547526_hqsptw.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        height: 100vh;
+
+        .HomeFormRow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 12px;
+            background-color: rgba(0, 0, 0, 0.1);
+            height: 50vh;
+            width: 85%;
+            border-radius: .7em;
+
+            .HomeForm {
+                .HomeFormTags {
+                    position: relative;
+                    padding: 15px 0 0;
+                    margin-top: 10px;
+                    font-weight: 700;
+
+                    .CustomField {
+                        .input {
+                            color: white;
+                            background: transparent;
+                            transition: border-color 0.2s;
+                            width: 180px;
+                            border: 0;
+                            border-bottom: 1px solid white;
+                            outline: 0;
+                            font-size: 1rem;
+                            padding: 7px 0;
+
+                            &:placeholder-shown~.Placeholder {
+                                font-size: 1rem;
+                                top: 20px;
+                                cursor: text;
+                            }
+
+                            &::placeholder {
+                                color: transparent;
+                            }
+                        }
+
+                        .input:focus {
+                            border-image: linear-gradient(to right, white, blue);
+                            padding-bottom: 6px;
+                            font-weight: 700;
+                            border-width: 1px;
+                            border-image-slice: 1;
+
+                            ~.Placeholder {
+                                position: absolute;
+                                display: block;
+                                transition: 0.2s;
+                                color: white;
+                                top: 0;
+                                font-size: 1rem;
+                                font-weight: 700;
+                            }
+                        }
+
+                        .Placeholder {
+                            position: absolute;
+                            display: block;
+                            transition: 0.2s;
+                            color: white;
+                            top: 0;
+                            font-size: 1rem;
+
+                        }
+                    }
+                }
+
+                .HomeFormBtn {
+                    outline: none;
+                    border: 1px solid white;
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: bold;
+                    background: rgba(255, 255, 255, 0.415);
+                    padding: .4em;
+                    border-radius: .4em;
+                    font-size: .9rem;
+                    width: 180px;
+                }
+            }
+        }
+    }
+}
