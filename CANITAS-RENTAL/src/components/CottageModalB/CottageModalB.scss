@@ -1,157 +1,146 @@
-// Modal abierto junto con todo el background negro que ocupa toda la pantalla
-.CottageModalBOpen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    visibility: hidden;
-    transition: all 500ms ease;
-    width: 100%;
-    height: 100vh;
-    margin-left: 0;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 5;
-}
+.ModalBContainer {
+    // Abre el modal al 'checkear' el input
+    #btn-CottageModalB:checked~.CottageModalBOpen {
+        opacity: 1;
+        visibility: visible;
+    }
+    // No permite ver la casilla que se tilda y destilda
+    #btn-CottageModalB {
+        display: none;
+    }
+    // Botón que al apretarlo abrirá el Modal
+    .lbl-CottageModalB {
+        cursor: pointer;
+        position: relative;
+        text-transform: uppercase;
+        text-shadow: none;
+        font-weight: bold;
+        border: 0 solid;
+        outline: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+        color: #fff;
+        font-size: 16px;
+        line-height: 45px;
+        max-width: 160px;
+        width: 100%;
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 0px;
+        -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+                transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+        outline-color: rgba(255, 255, 255, 0.5);
+        outline-offset: 0px;
+        border-radius: 1px;
+    }
+    // Hover del botón que abre el Modal
+    .lbl-CottageModalB:hover {
+        border: 1px solid;
+        box-shadow:
+            inset 0 0 20px rgba(255, 255, 255, 0.5),
+            0 0 20px rgba(255, 255, 255, 0.2);
+        outline-offset: 15px;
+        outline-color: rgba(255, 255, 255, 0);
+    }
 
-// Abre el modal al 'checkear' el input
-#btn-CottageModalB:checked~.CottageModalBOpen {
-    opacity: 1;
-    visibility: visible;
-}
+    // Modal abierto junto con todo el background negro que ocupa toda la pantalla
+    .CottageModalBOpen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        visibility: hidden;
+        transition: all 500ms ease;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 5;
 
-// Modal
-.ViewModalBContainer {
-    display: flex;
-    width: 90vw;
-    height: 85vh;
-    background-color: #868d84;
-    color: white;
-    padding: 0;
-    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
-    transition: all 500ms ease;
-    position: relative;
-    border-radius: 1em 0 0 1em;
-}
-
-// Cruz para cerrar el Modal
-.ModalBContainer .X {
-    position: absolute;
-    font-weight: bold;
-    top: 10px;
-    right: 10px;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-// No permite ver la casilla que se tilda y destilda
-#btn-CottageModalB {
-    display: none;
-}
-
-// Botón que al apretarlo abrirá el Modal
-.lbl-CottageModalB {
-    cursor: pointer;
-    position: relative;
-    text-transform: uppercase;
-    text-shadow: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 45px;
-    max-width: 160px;
-    width: 100%;
-    border: 0 solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-    outline: 1px solid;
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 0px;
-    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-            transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-    outline-color: rgba(255, 255, 255, 0.5);
-    outline-offset: 0px;
-    border-radius: 1px;
-}
-
-// Hover del botón que abre el Modal
-.lbl-CottageModalB:hover {
-    border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
-    outline-offset: 15px;
-    outline-color: rgba(255, 255, 255, 0);
-    text-shadow: 1px 1px 2px #427388;
-}
-
-// Información del Modal
-.CottageModalBText {
-    display: flex;
-    // border: 2px solid blue;
-    padding: 0;
-    overflow-y: auto;
-    text-align: justify;
-    font-weight: 500;
-    color: white;
-    justify-content: center;
-
-    .ModalBInfoContainer {
-        // border: 2px solid rgb(128, 115, 0);
-        height: 105vh;
-        margin-top: 3em;
-        padding-bottom: 3em;
-
-        .TitleB {
-            font-family: romantica;
-            font-size: 3em;
+        // Modal
+        .ViewModalBContainer {
+            background-color: #868d84;
             color: white;
-            text-align: center;
-            margin-bottom: .7em;
-        }
-        .Intro {
-            width: 30vw;
-            font-size: .9em;
-            text-align: justify;
-            margin-bottom: 2.5em;
-        }
-        .UlContainer {
-            display: flex;
-            .Col {
-                // border: 2px solid red;
-                li {
-                    line-height: 2em;
-                    text-align: center;
+            box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+            transition: all 500ms ease;
+            position: relative;
+
+            // Cruz para cerrar el Modal
+            .X {
+                position: absolute;
+                font-weight: bold;
+                top: 10px;
+                right: 10px;
+                color: white;
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+            // Imagenes del Modal
+            .CottageModalBsliderCol {
+                border-radius: 1em 0 0 1em;
+                .ModalSliderContainerB {
+                    overflow: hidden;
+                    .MainContainerB {
+                        .mainImgB {
+                            object-fit: cover;
+                        }
+                    }
+                    .thumbnailsB {
+                        border-radius: 1em 0 0 1em;
+                        .ThumbImagesB {
+                            object-fit: cover;
+                        }
+                    }
                 }
             }
-        }
-        .Description {
-            margin-top: 2.5em;
-            text-align: justify;
-            width: 30vw;
-            font-size: .9em;
+
+            // Información Texto del Modal
+            .CottageModalBText {
+                display: flex;
+                overflow-y: auto;
+                text-align: justify;
+                color: white;
+                justify-content: center;
+
+                .ModalBInfoContainer {
+                    .TitleB {
+                        font-family: romantica;
+                        color: white;
+                        text-align: center;
+                    }
+                    .Intro {
+                        text-align: justify;
+                    }
+                    .UlContainer {
+                        .Col {
+                            ul {
+                                li {
+                                    text-align: center;
+                                    list-style: none;
+                                }
+                            }
+                        }
+                    }
+                    .Description {
+                        text-align: justify;
+                    }
+                }
+            }
+            // Colores del Scroll
+            .CottageModalBText::-webkit-scrollbar {
+                width: 2px;
+                background-color: rgb(154, 154, 154);
+            }
+            .CottageModalBText::-webkit-scrollbar-thumb {
+                background-color: rgba(255, 255, 255, 0.614);
+            }
         }
     }
 }
 
-.CottageModalBsliderContainer {
-    background-image: url('https://res.cloudinary.com/dfprmjlir/image/upload/v1663828342/CANITAS%20RENTAL/MODERN_BARNHOUSE_19_1800x1800_lxuo9d.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 1em 0 0 1em;
-}
 
-
-// Colores del Scroll
-.CottageModalBText::-webkit-scrollbar {
-    width: 2px;
-    background-color: rgb(154, 154, 154);
-    transform:rotateY(180deg);
-}
-
-.CottageModalBText::-webkit-scrollbar-thumb {
-    background-color: white;
-}
 
 // Media Query para ancho del Modal abierto
 @media only screen and (min-width:320px) and (max-width:768px) {

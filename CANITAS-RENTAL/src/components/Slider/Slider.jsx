@@ -3,7 +3,7 @@ import './Slider.scss'
 import './SliderMediaQuery.scss'
 
 const slides = [
-{
+  {
     title: "Horses",
     subtitle: "Nature",
     description: "Adventure is never far away",

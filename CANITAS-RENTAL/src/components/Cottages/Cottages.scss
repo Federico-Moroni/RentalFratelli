@@ -1,102 +1,41 @@
 .CottagesContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-
+    --bs-gutter-x: 0;
     .CottagesRow {
         display: flex;
-        padding: 2em;
-        height: 85vh;
-        width: 90vw;
-        box-shadow:
-            rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-            rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        border-radius: 1em;
 
         .ImagesCol {
-            height: 75vh;
-
-            .Welcome {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-image: url('https://res.cloudinary.com/dfprmjlir/image/upload/v1663704040/CANITAS%20RENTAL/pexels-casara-butler-2418826_la8a2x.jpg');
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: cover;
-                height: 20vh;
-                border-radius: .5em;
-
-                .ColorMessage {
-                    cursor: default;
-                    transition: 0.5s ease-in-out;
-                    font-family: romantica;
-                    color: white;
-                    z-index: 1;
-                    font-size: 2.5em;
-                    text-shadow:
-                        10px 10px 25px rgb(0, 0, 0),
-                        -10px 10px 25px rgb(0, 0, 0),
-                        -10px -10px 25px rgb(0, 0, 0),
-                        10px -10px 25px rgb(0, 0, 0);
-                }
-
-                :hover {
-                    font-size: 2.6em;
-                    text-shadow: 2px 2px #000000;
-                }
+            .ColorMessage {
+                cursor: default;
+                font-family: romantica;
+                color: white;
             }
-
-            .Cottage01,
-            .Cottage02 {
+            .Cottage01, .Cottage02 {
                 background-repeat: no-repeat;
                 background-size: cover;
-                height: 36.58vh;
-                margin-top: .5em;
                 display: flex;
                 align-items: center;
             }
 
             .Cottage01 {
                 background-image: url('https://res.cloudinary.com/dfprmjlir/image/upload/v1663823119/CANITAS%20RENTAL/denoutdoorsdotcom_MODERN_ALPINE_CABIN_001_1800x1800_bixtdm.jpg');
-                background-position: center 70%;
-                border-radius: .5em .5em 0 0;
 
             }
-
             .Cottage02 {
                 background-image: url('https://res.cloudinary.com/dfprmjlir/image/upload/v1663828499/CANITAS%20RENTAL/MODERN_BARNHOUSE_06_1800x1800_snm1iy.jpg');
-                background-position: center 60%;
-                border-radius: 0 0 .5em .5em;
             }
         }
 
         .InfoCol {
             justify-content: center;
-            border-radius: .5em;
-            margin-right: 2em;
-            height: 75vh;
-            box-shadow:
-                rgba(27, 31, 35, 0.04) 0px 1px 0px,
-                rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
-
             .TextRow {
-                margin-top: 15vh;
-
                 .Title {
                     font-family: romantica;
-                    font-size: 3em;
                 }
-
                 .Text {
-                    padding: 0 25%;
                     text-align: justify;
                 }
-            }
-
-            .FormRow {
-                height: 10vh;
             }
         }
     }

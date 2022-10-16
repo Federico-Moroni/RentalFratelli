@@ -15,7 +15,7 @@ import Slider from "../Slider/Slider";
 const Activities = () => {
 
   return (
-  <Container fluid className='ActivitiesContainer'>
+  <Container fluid className='ActivitiesContainer activities'>
       <div className='ActivitiesImgWrapper'>
         <Slider className='SliderContainer'/>
       </div>

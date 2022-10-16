@@ -1,166 +1,120 @@
-// Modal abierto junto con todo el background negro que ocupa toda la pantalla
-.CottageModalOpen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-}
-
-// Abre el modal al 'checkear' el input
-#btn-cottagemodal:checked~.CottageModalOpen {
-    opacity: 1;
-    visibility: visible;
-}
-
-// Modal
-.ViewModalContainer {
-    width: 90vw;
-    height: 80vh;
-    // background-color: #111;
-    color: white;
-    padding: 0;
-    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
-    transition: all 500ms ease;
-    position: relative;
-}
-
-// Cruz para cerrar el Modal
-.ModalContainer .X {
-    position: absolute;
-    font-weight: bold;
-    top: 10px;
-    right: 10px;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-// No permite ver la casilla que se tilda y destilda
-#btn-cottagemodal {
-    display: none;
-}
-
-// Botón que al apretarlo abrirá el Modal
-.lbl-CottageModal {
-    cursor: pointer;
-    position: relative;
-    text-transform: uppercase;
-    text-shadow: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 45px;
-    max-width: 160px;
-    width: 100%;
-    border: 0 solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-    outline: 1px solid;
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 0px;
-    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-    outline-color: rgba(255, 255, 255, 0.5);
-    outline-offset: 0px;
-    border-radius: 1px;
-}
-
-// Hover del botón que abre el Modal
-.lbl-CottageModal:hover {
-    border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
-    outline-offset: 15px;
-    outline-color: rgba(255, 255, 255, 0);
-    text-shadow: 1px 1px 2px #427388;
-}
-
-// Información del Modal
-.CottageModalText {
-    padding: 0;
-    overflow-y: auto;
-    text-align: left;
-    font-weight: 500;
-    color: white;
-    display: flex;
-    justify-content: end;
-
-    p {
-        font-weight: bold;
+.ModalContainer {
+    // Abre el modal al 'checkear' el input
+    #btn-CottageModal:checked~.CottageModalOpen {
+        opacity: 1;
+        visibility: visible;
     }
-}
-
-.ModalInfoContainer {
-    width: 43%;
-    height: auto;
-}
-
-// Colores del Scroll
-.CottageModalText::-webkit-scrollbar {
-    width: 5px;
-    background-color: rgb(154, 154, 154);
-}
-
-.CottageModalText::-webkit-scrollbar-thumb {
-    background-color: #d13639;
-}
-
-// Media Query para ancho del Modal abierto
-@media only screen and (min-width:320px) and (max-width:768px) {
-    .ModalContainer {
-        width: 80%;
+    // No permite ver la casilla que se tilda y destilda
+    #btn-CottageModal {
+        display: none;
     }
-}
-
-.ModalSliderContainer {
-    display: flex;
-    justify-content: end;
-    text-align: right;
-    height: auto;
-    width: 57%;
-}
-
-ul,
-li,
-a {
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-}
-
-.thumbnails {
-    display: flex;
-    flex-direction: column;
-    line-height: 0;
-
-    a {
-        display: block;
+    // Botón que al apretarlo abrirá el Modal
+    .lbl-CottageModal {
+        cursor: pointer;
     }
 
-    .ThumbImages {
-        width: 10vw;
-        height: 20vmin;
-        object-fit: cover;
-        object-position: top;
-    }
-}
+    // Modal abierto junto con todo el background negro que ocupa toda la pantalla
+    .CottageModalOpen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        visibility: hidden;
+        transition: all 500ms ease;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 5;
+        cursor: default;
 
-.mainContainer {
-    overflow: hidden;
+        // Modal
+        .ViewModalContainer {
+            background-color: #868d84;
+            color: white;
+            box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+            transition: all 500ms ease;
+            position: relative;
 
-    .mainImg {
-        position: relative;
-        object-fit: cover;
-        width: 42vw;
-        height: 80vh;
-        z-index: 1;
-    }
-}
+            // Cruz para cerrar el Modal
+            .X {
+                position: absolute;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+            }
+            .CottageModal {
+                .ModalInfoContainer {
+                    // Text Information
+                    .SectionInfoContainer {
+                        display: flex;
+                        .InfoContainer {
+                            .Title {
+                                font-family: romantica;
+                                color: white;
+                                text-align: center;
+                            }
+                            .Intro {
+                                text-align: justify;
+                            }
+                            .UlContainer {
+                                .Col {
+                                    ul {
+                                        li {
+                                            text-align: center;
+                                            list-style: none;
+                                        }
+                                    }
+                                }
+                            }
+                            .Description {
+                                text-align: justify;
+                            }
+                        }
+                        .InfoContainer::-webkit-scrollbar {
+                            width: 2px;
+                            background-color: rgb(154, 154, 154);
+                        }
+                        .InfoContainer::-webkit-scrollbar-thumb {
+                            background-color: rgba(255, 255, 255, 0.614);
+                        }
+                    }
+                    .ErrorSection {
+                        width: 90vw;
+                        height: 85vh;
+                        .Error {
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .ErrorImg {
+                            height: 40vh;
+                            margin-top: 20vh;
+                            margin-bottom: 1em;
+                        }
+                    }
+                }
+
+                // IMAGES
+                    .ModalSliderRContainer {
+                        .mainContainer {
+                            .mainImg {
+                                object-fit: cover;
+                            }
+                        }
+                        .thumbnails {
+                            overflow: hidden;
+                            li {
+                                list-style: none;
+                                .ThumbImages {
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                    }
+            }
+    }}}

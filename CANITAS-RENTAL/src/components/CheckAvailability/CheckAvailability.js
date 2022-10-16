@@ -1,5 +1,6 @@
 /* IMPORTS */
 // SCSS import:
+import './CheckAvailability.scss';
 import './CheckAvailabilityMediaQuery.scss';
 // Components import:
 import CottagesModal from '../CottagesModal/CottagesModal';
@@ -11,7 +12,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 // Check Availability component:
 function CheckAvailability () {
-    const [checkAmountAdults, setCheckAmountAdults] = useState()
+    const [checkAmountAdults, setCheckAmountAdults] = useState("")
     const [checkAmountNights, setCheckAmountNights] = useState()
 
     function CheckAvailabilityLogic (event) {
@@ -25,20 +26,20 @@ function CheckAvailability () {
                 <form className='HomeForm' onSubmit={CheckAvailabilityLogic}>
 
                     <Col  className='HomeFormTags'>
-                        <label className='CustomField'>
-                            <input className='input' id='FormAdultsA' type='number' value={checkAmountAdults} name='checkQty' placeholder="&nbsp;" required='' onChange={(event)=>setCheckAmountAdults(event.target.value)}/>
-                            <span className='Placeholder'>Amount of adults</span>
-                        </label>
+                        <div className='CheckAvFormGroup'>
+                            <input className='CustomField' id='FormAdultsA' type='number' value={checkAmountAdults} name='checkQty' required='' onChange={(event)=>setCheckAmountAdults(event.target.value)}/>
+                            <label className='Placeholder'>Amount of adults</label>
+                        </div>
                     </Col>
 
                     <Col  className='HomeFormTags'>
-                        <label className='CustomField'>
-                            <input className='input' id='FormNightsA' type='number' value={checkAmountNights} name='' placeholder="&nbsp;" required='' onChange={(event)=>setCheckAmountNights(event.target.value)}/>
-                            <span className='Placeholder'>Amount of nights</span>
+                        <label className='CheckAvFormGroup'>
+                            <input className='CustomField' id='FormNightsA' type='number' value={checkAmountNights} name='' required='' onChange={(event)=>setCheckAmountNights(event.target.value)}/>
+                            <label className='Placeholder'>Amount of nights</label>
                         </label>
                     </Col>
 
-                    <Col  className='HomeFormTags'>
+                    <Col  className='HomeFormTagsAvailability'>
                         <div>
                             <button type='submit' className='HomeFormBtn' id='HomeFormBtnId'> <CottagesModal count={checkAmountAdults}/></button>
                         </div>

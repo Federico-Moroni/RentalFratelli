@@ -8,14 +8,12 @@
 
     .LoginFormDiv {
         width: 18vw;
-
         .LoginFormTitle {
             font-size: 1.8em;
             text-transform: none;
             margin-bottom: 10%;
             font-weight: bold;
         }
-
         .LoginFormGroup {
             position: relative;
             padding: 15px 0 0;
@@ -31,25 +29,21 @@
                 padding: 7px 0;
                 background: transparent;
                 transition: border-color 0.2s;
-
                 &::placeholder {
                     color: transparent;
                 }
-
-                &:placeholder-shown~.Placeholder {
+                &:placeholder-shown ~ .Placeholder {
                     cursor: text;
                     top: 20px;
                 }
             }
-
             .CustomField:focus {
                 padding-bottom: 6px;
                 font-weight: 700;
                 border-width: 1px;
-                border-image: linear-gradient(to right, red, black);
+                border-image: linear-gradient(to right, red,black);
                 border-image-slice: 1;
-
-                ~.Placeholder {
+                ~ .Placeholder {
                     position: absolute;
                     top: 0;
                     display: block;
@@ -57,7 +51,6 @@
                     color: black;
                 }
             }
-
             .Placeholder {
                 position: absolute;
                 top: 0;
@@ -67,7 +60,6 @@
                 text-transform: capitalize;
             }
         }
-
         .LoginButton {
             outline: none;
             border: 1px solid white;
@@ -81,18 +73,15 @@
             font-size: .9rem;
             width: 12.5em;
         }
-
         .LoginButton:hover,
         .LoginButton:focus {
             border-color: rgba(0, 0, 0, 0.15);
             box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
             color: black;
         }
-
         .LoginButton:hover {
             transform: translateY(-1px);
         }
-
         .LoginButton:active {
             background-color: #F0F0F1;
             border-color: rgba(0, 0, 0, 0.15);

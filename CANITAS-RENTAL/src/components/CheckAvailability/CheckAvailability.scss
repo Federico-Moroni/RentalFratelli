@@ -1,0 +1,53 @@
+.HomeFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .HomeFormRow {
+        .HomeForm {
+            justify-content: center;
+            align-items: baseline;
+
+            .HomeFormTags {
+                .CheckAvFormGroup {
+                    position: relative;
+
+                    .CustomField {
+                        background-color: #b6b6b625;
+
+                        &::placeholder {
+                            color: transparent;
+                        }
+
+                        &:placeholder-shown~.Placeholder {
+                            cursor: text;
+                        }
+                    }
+
+                    .CustomField:focus {
+                        border-image: linear-gradient(to right, red, black);
+
+                        ~.Placeholder {
+                            position: absolute;
+                            display: block;
+                            color: black;
+                        }
+                    }
+
+                    .Placeholder {
+                        position: absolute;
+                        display: block;
+                        color: #a0a0a0;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+            .HomeFormTagsAvailability {
+                .HomeFormBtn {
+                    background-color: #b6b6b625;
+                }
+            }
+        }
+    }
+}

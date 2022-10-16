@@ -4,7 +4,6 @@
         height: 100vh;
         z-index: -5;
         --bs-gutter-x: 0;
-
         .ActivitiesImgWrapper {
             height: 100vh;
             padding-top: 12vh;
@@ -55,7 +54,7 @@
 }
 
 // XS DEVICES [-]
-@media all and (min-width: 415px) and (max-width: 576px) {
+@media all and (min-width: 415px) and (max-width: 576px){
     .ActivitiesContainer {
         height: 100vh;
         z-index: -5;

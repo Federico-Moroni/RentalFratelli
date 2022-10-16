@@ -53,20 +53,17 @@
     display: flex;
     width: 100vw;
     overflow: hidden;
-
     .LoginImg {
         width: 30vw;
         height: 90vh;
         object-fit: cover;
     }
-
     .ModalText {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 90vh;
         width: 30vw;
-
         .LogoutButton {
             outline: none;
             border: 1px solid white;
@@ -80,18 +77,15 @@
             font-size: .9rem;
             width: 12.5em;
         }
-
         .LogoutButton:hover,
         .LogoutButton:focus {
             border-color: rgba(0, 0, 0, 0.15);
             box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
             color: black;
         }
-
         .LogoutButton:hover {
             transform: translateY(-1px);
         }
-
         .LogoutButton:active {
             background-color: #F0F0F1;
             border-color: rgba(0, 0, 0, 0.15);

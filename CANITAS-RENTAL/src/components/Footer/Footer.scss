@@ -1,0 +1,32 @@
+.FooterContainer {
+    --bs-gutter-x: 0;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    .FooterRow {
+        .FooterColumn {
+            --bs-gutter-x: 0;
+            text-align: left;
+            h3 {
+                font-family: romantica;
+            }
+            ul {
+                li {
+                    list-style: none;
+                    cursor: pointer;
+                    .NavBarLink {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .FooterRowBottom {
+        display: flex;
+        --bs-gutter-x: 0;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

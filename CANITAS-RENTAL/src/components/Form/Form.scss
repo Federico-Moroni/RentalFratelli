@@ -1,4 +1,58 @@
 .FormContainer{
-    height: 100vh;
-    border: 2px solid red;
+    .Form {
+        .FormSingleItem {
+            position: relative;
+            padding: 15px 0 0;
+            margin-top: 10px;
+            width: 95%;
+            font-size: .9em;
+            label {
+                position: absolute;
+                top: 0;
+                display: block;
+                transition: 0.2s;
+                color: #a0a0a0;
+                text-transform: capitalize;
+            }
+            input, textarea {
+                width: 100%;
+                height: 40px;
+                border: 0;
+                border-bottom: 1px solid #b6b6b6;
+                outline: 0;
+                padding: 7px 0;
+                transition: border-color 0.2s;
+                background-color: #b6b6b625;
+                border-radius: .5em;
+                margin-top: 10px;
+                padding-left: 1em;
+                padding-right: 1em;
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+            textarea {
+                height: 120px;
+            }
+        }
+        .Formbtn {
+            position: relative;
+            width: 100%;
+            font-size: .9em;
+            display: flex;
+            button {
+                width: 95%;
+                height: 40px;
+                border: 0;
+                border-bottom: 1px solid #b6b6b6;
+                outline: 0;
+                background-color: #b6b6b625;
+                border-radius: .5em;
+                margin-top: 10px;
+            }
+            :hover {
+                filter: brightness(.2%);
+            }
+        }
+    }
 }

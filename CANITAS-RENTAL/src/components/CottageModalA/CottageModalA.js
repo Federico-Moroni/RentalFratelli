@@ -2,6 +2,12 @@
 
 // SCSS import:
 import './CottageModalA.scss';
+import './CottageModalAMediaQuery.scss';
+// Images import:
+import img1A from '../../Assets/Images/A1.webp'
+import img2A from '../../Assets/Images/A2.webp'
+import img3A from '../../Assets/Images/A3.webp'
+import img4A from '../../Assets/Images/A4.webp'
 // React import:
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -22,10 +28,27 @@ import { TbHanger } from "react-icons/tb";
 // Cottage Modal A Component:
 const CottageModalA = () => {
 
+    function change1A() {
+        const thumb = img1A
+        document.getElementById('mainImg').src = thumb;
+    }
+    function change2A() {
+        const thumb = img2A
+        document.getElementById('mainImg').src = thumb;
+    }
+    function change3A() {
+        const thumb = img3A
+        document.getElementById('mainImg').src = thumb;
+    }
+    function change4A() {
+        const thumb = img4A
+        document.getElementById('mainImg').src = thumb;
+    }
+
 return (
         <Container className='ModalAContainer'>
             <input type="checkbox" id="btn-CottageModalA"></input>
-                <label htmlFor="btn-CottageModalA" className="lbl-CottageModalA"> View More </label>
+            <label htmlFor="btn-CottageModalA" className="lbl-CottageModalA"> View More </label>
 
             <Row className="CottageModalAOpen">
                 <div className="ViewModalAContainer">
@@ -69,8 +92,28 @@ return (
                             For moments of rest different types of games, chess, Spanish cards and cards for poker. It also has a personalized guide for sport fishing, in the best places, with complete equipment and in a 4x4 van. Attractions that add up to a stay not to be forgotten.</p>
                         </div>
                     </Col>
-                    <Col className='CottageModalAsliderContainer'>
-                        <div className='ModalAImg'></div>
+
+                    <Col className='CottageModalAsliderCol'>
+                        <div className="ModalSliderContainerA">
+                            <ul className="MainContainerA">
+                                <img className='mainImgA' id="mainImg" src={img1A}/>
+                            </ul>
+
+                            <ul className="thumbnailsA">
+                                <li>
+                                    <a onClick={change1A} href="#slide1"><img className='ThumbImagesA' src={img1A} /></a>
+                                </li>
+                                <li>
+                                    <a onClick={change2A} href="#slide1"><img className='ThumbImagesA' src={img2A} /></a>
+                                </li>
+                                <li>
+                                    <a onClick={change3A} href="#slide1"><img className='ThumbImagesA' src={img3A} /></a>
+                                </li>
+                                <li>
+                                    <a onClick={change4A} href="#slide1"><img className='ThumbImagesA BottomRadius' src={img4A} /></a>
+                                </li>
+                            </ul>
+                        </div>
                     </Col>
 
                 </div>

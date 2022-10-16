@@ -19,13 +19,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 const Cottages = () => {
 
     return(
-        <Container fluid className='CottagesContainer'>
+        <Container fluid className='CottagesContainer cottages'>
             <Row className='CottagesRow'>
 
-                <Col xl={5} className='ImagesCol'>
-                    {/* <div className='Welcome'>
-                        <p className='ColorMessage'>Welcome to our paradisiac Forest</p>
-                    <div className='blur'></div></div> */}
+                <Col xl={5} lg={5} md={12} className='ImagesCol'>
                     <div className='Cottage01'>
                         <CottageModalA />
                     </div>

@@ -1,11 +1,8 @@
 import './Form.scss'
 import React, { useState } from 'react'
-/* Axios es una API HTTP de cliente basada en XMLHttpRequest , que se puede utilizar en el navegador y en un servidor con Node. js[ref]. Axios funciona de forma asíncrona, permitiendo realizar llamadas API REST[ref] con retorno JSON. */
 import axios from 'axios'
 
 export default function Form() {
-
-// Phone, cottage (a or b radio) and date.
 
 const [formData, setFormData] = useState({
     name:'',
@@ -14,7 +11,7 @@ const [formData, setFormData] = useState({
     CheckIn:'',
     CheckOut:'',
     message:''
-})
+});
 
 function handleChange (event) {
     const {name, value} = event.target
@@ -27,7 +24,7 @@ function handleChange (event) {
 }
 
 const formSubmit = (event) => {
-    event.preventDefault(); //preventDefault is called on the event when submitting the form to prevent a browser reload/refresh.
+    event.preventDefault();
     let data = {
         name:formData.name,
         email:formData.email,
@@ -37,7 +34,6 @@ const formSubmit = (event) => {
         message:formData.message
     }
     axios.post('/api/forma', data)
-
     setFormData({        
         name:'',
         email:'',

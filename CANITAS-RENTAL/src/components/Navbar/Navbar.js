@@ -9,6 +9,7 @@ import LoginModal from '../LoginModal/LoginModal';
 // React import:
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
 
 /* COMPONENTS */
@@ -17,14 +18,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 const Navbar = () => {
 
     return(
-        <Container fluid className='NavbarContainer'>
+        <Container fluid className='NavbarContainer home'>
             <Row className='NavbarRow'>
                 <Col className='NavbarColumn'>
                     <ul className='NavbarUl'>
                         <li className='NavbarLi'>Home</li>
                         <li className='NavbarLi'>Cottages</li>
                         <li className='NavbarLi'>Activities</li>
-                        <li className='NavbarLi'>Book Now</li>
                         <li className='NavbarLi'>Contact</li>
                         <li className='NavbarLiModal'><LoginModal /></li>
                     </ul>

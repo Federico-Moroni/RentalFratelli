@@ -1,9 +1,14 @@
+/* IMPORTS */
+
+// SCSS import:
 import './App.css';
+// Components import:
 import Navbar from './components/Navbar/Navbar'
 import HeroImage from './components/HeroImage/HeroImage';
-import Activities from './components/Activities/Activities';
-import Form from './components/Form/Form'
 import Cottages from './components/Cottages/Cottages';
+import Activities from './components/Activities/Activities';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -15,8 +20,11 @@ function App() {
       <main>
         <Cottages />
         <Activities />
-        <Form />
+        <Contact />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

@@ -3,29 +3,23 @@
     .NavbarContainer {
         z-index: 1;
         padding-top: 2vh;
-
         .NavbarRow {
             width: 100%;
-
             .NavbarColumn {
                 height: 3em;
                 padding-left: 0;
                 padding-right: 0;
                 width: 100%;
-
                 .NavbarUl {
                     height: 3em;
                     padding-left: 0;
-                    width: 60%;
-
-                    .NavbarLi,
-                    .NavbarLiModal {
+                    width: 50%;
+                    .NavbarLi, .NavbarLiModal {
                         font-size: .9em;
                         margin-bottom: 1.5%;
                     }
                 }
             }
-
             .BurgerMenuLabel {
                 display: none;
             }
@@ -38,29 +32,23 @@
     .NavbarContainer {
         z-index: 1;
         padding-top: 2vh;
-
         .NavbarRow {
             width: 100%;
-
             .NavbarColumn {
                 height: 3em;
                 padding-left: 0;
                 padding-right: 0;
                 width: 100%;
-
                 .NavbarUl {
                     height: 3em;
                     padding-left: 0;
                     width: 60%;
-
-                    .NavbarLi,
-                    .NavbarLiModal {
+                    .NavbarLi, .NavbarLiModal {
                         font-size: .9em;
                         margin-bottom: 1.5%;
                     }
                 }
             }
-
             .BurgerMenuLabel {
                 display: none;
             }
@@ -73,29 +61,23 @@
     .NavbarContainer {
         z-index: 1;
         padding-top: 2vh;
-
         .NavbarRow {
             width: 100%;
-
             .NavbarColumn {
-                height: 3.5em;
+                height: 3em;
                 padding-left: 0;
                 padding-right: 0;
                 width: 100%;
-
                 .NavbarUl {
-                    height: 3.5em;
-                    padding-left: 0;
+                    height: 3em;
+                    padding-left: 1%;
                     width: 100%;
-
-                    .NavbarLi,
-                    .NavbarLiModal {
-                        font-size: 0.8em;
+                    .NavbarLi, .NavbarLiModal {
+                        font-size: .9em;
                         margin-bottom: 1.5%;
                     }
                 }
             }
-
             .BurgerMenuLabel {
                 display: none;
             }
@@ -108,14 +90,11 @@
     .NavbarContainer {
         z-index: 1;
         padding-top: 2vh;
-
         .NavbarRow {
             width: 100%;
-
             .NavbarColumn {
                 display: none;
             }
-
             .BurgerMenuLabel {
                 margin-top: 17vh;
                 padding-left: 50vw;
@@ -125,18 +104,15 @@
 }
 
 // XS DEVICES [-]
-@media all and (min-width: 415px) and (max-width: 576px) {
+@media all and (min-width: 415px) and (max-width: 576px){
     .NavbarContainer {
         z-index: 1;
         padding-top: 2vh;
-
         .NavbarRow {
             width: 100%;
-
             .NavbarColumn {
                 display: none;
             }
-
             .BurgerMenuLabel {
                 margin-top: 17vh;
                 padding-left: 50vw;
@@ -150,14 +126,11 @@
     .NavbarContainer {
         z-index: 1;
         padding-top: 2vh;
-
         .NavbarRow {
             width: 100%;
-
             .NavbarColumn {
                 display: none;
             }
-
             .BurgerMenuLabel {
                 margin-top: 17vh;
                 padding-left: 50vw;

@@ -1,0 +1,45 @@
+.ContactContainer {
+    display: flex;
+    justify-content: center;
+    --bs-gutter-x: 0;
+    .ContactRow {
+        display: flex;
+        .ContactImgColumn {
+            .ContactImg {
+                object-fit: cover;
+            }
+        }
+        .ContactFormColumn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .ContactFormColumnFlex {
+                .Title {
+                    font-family: romantica;
+                    color: black;
+                    text-align: center;
+                }
+                .DataAndForm {
+                    .DataColumn {
+                        overflow: hidden;
+                        p {
+                            font-weight: bold;
+                        }
+                        ul {
+                            li {
+                                list-style: none;
+                            }
+                        }
+                        .Icons {
+                            display: flex;
+                            color: #b6b6b6;
+                            li {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
