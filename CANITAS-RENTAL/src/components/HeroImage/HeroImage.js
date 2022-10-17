@@ -17,7 +17,7 @@ const HeroImage = () => {
         <Container fluid className='HeroImageContainer'>
             <Row>
                 <Col className='HeroCol'>
-                    <img src='https://res.cloudinary.com/dfprmjlir/image/upload/v1665956135/CANITAS%20RENTAL/COMPRIMIDAS/pexels-mali-maeder-109679_po2icn-min_1_nxlgp3.jpg' className='HeroImg' alt=''></img>
+                    <img src='https://res.cloudinary.com/dfprmjlir/image/upload/v1662321866/CANITAS%20RENTAL/home__picture_jlbdjq.jpg' className='HeroImg' alt=''></img>
                     <div className='GlassEffectContainer'>
                         <div className='GlassEffect'></div>
                     </div>

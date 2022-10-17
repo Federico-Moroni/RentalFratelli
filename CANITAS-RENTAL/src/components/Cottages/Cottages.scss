@@ -4,6 +4,7 @@
     --bs-gutter-x: 0;
     .CottagesRow {
         display: flex;
+        background-color: rgb(241, 245, 241);
 
         .ImagesCol {
             .ColorMessage {
@@ -28,6 +29,7 @@
         }
 
         .InfoCol {
+            background-color: rgb(251, 252, 251);
             justify-content: center;
             .TextRow {
                 .Title {

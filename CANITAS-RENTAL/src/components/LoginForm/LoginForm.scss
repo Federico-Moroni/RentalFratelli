@@ -41,7 +41,7 @@
                 padding-bottom: 6px;
                 font-weight: 700;
                 border-width: 1px;
-                border-image: linear-gradient(to right, red,black);
+                border-image: linear-gradient(to right, rgb(117, 185, 103), black);
                 border-image-slice: 1;
                 ~ .Placeholder {
                     position: absolute;

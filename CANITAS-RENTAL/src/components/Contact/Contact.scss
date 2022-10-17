@@ -4,6 +4,7 @@
     --bs-gutter-x: 0;
     .ContactRow {
         display: flex;
+        background-color: rgb(241, 245, 241);
         .ContactImgColumn {
             .ContactImg {
                 object-fit: cover;
@@ -20,19 +21,26 @@
                     text-align: center;
                 }
                 .DataAndForm {
+                    width: 46vw;
                     .DataColumn {
                         overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         p {
                             font-weight: bold;
+                            text-align: center;
                         }
                         ul {
                             li {
                                 list-style: none;
+                                text-align: center;
                             }
                         }
                         .Icons {
                             display: flex;
                             color: #b6b6b6;
+                            justify-content: center;
                             li {
                                 cursor: pointer;
                             }
