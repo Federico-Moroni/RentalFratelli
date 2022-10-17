@@ -1,31 +1,39 @@
 // // X-LARGE DEVICES [XL]
-@media all and (min-width: 2000px) {
+@media all and (min-width: 1200px) {
     .FooterContainer {
         padding: 2em 0 1em 0;
+
         .FooterRow {
+            width: 100%;
             .FooterColumn {
-                padding-left: 5em;
+                padding-left: 12vw;
+
                 h3 {
                     padding-bottom: .5em;
                 }
+
                 p {
                     font-size: .8em;
                     width: 70%;
                 }
+
                 ul {
                     display: flex;
+
                     li {
                         width: 8em;
                     }
                 }
             }
         }
+
         .FooterRowBottom {
             padding-left: 5em;
             padding-right: 5em;
             font-size: .8em;
             line-height: .3px;
             margin-bottom: 2em;
+            width: 100%;
         }
     }
 }
@@ -34,24 +42,30 @@
 @media all and (min-width: 993px) and (max-width: 1199px) {
     .FooterContainer {
         padding: 2em 0 1em 0;
+
         .FooterRow {
             .FooterColumn {
                 padding-left: 5em;
+
                 h3 {
                     padding-bottom: .5em;
                 }
+
                 p {
                     font-size: .8em;
                     width: 90%;
                 }
+
                 ul {
                     display: flex;
+
                     li {
                         width: 7em;
                     }
                 }
             }
         }
+
         .FooterRowBottom {
             padding-left: 5em;
             padding-right: 5em;
@@ -66,19 +80,24 @@
 @media all and (min-width: 769px) and (max-width: 992px) {
     .FooterContainer {
         padding: 2em 0 1em 0;
+
         .FooterRow {
             .FooterColumn {
                 padding-left: 4em;
+
                 h3 {
                     padding-bottom: .5em;
                 }
+
                 p {
                     font-size: .8em;
                     width: 90%;
                 }
+
                 ul {
                     height: 15vh;
                     margin-top: 1em;
+
                     li {
                         // width: 7em;
                         padding-right: 3em;
@@ -89,12 +108,14 @@
                 }
             }
         }
+
         .FooterRowBottom {
             padding-left: 5em;
             padding-right: 5em;
             font-size: .8em;
             line-height: .3px;
             margin-bottom: 2em;
+
             hr {
                 margin-bottom: 2em;
             }
@@ -106,17 +127,22 @@
 @media all and (min-width: 577px) and (max-width: 768px) {
     .FooterContainer {
         padding: 2em 0 1em 0;
+
         .FooterRow {
             .FooterColumn {
-                h3, p {
+
+                h3,
+                p {
                     display: none;
                 }
+
                 ul {
                     display: flex;
                     justify-content: center;
                     justify-content: space-evenly;
                     width: 100vw;
                     margin-top: 1em;
+
                     li {
                         padding-right: 3em;
                         font-size: .9em;
@@ -125,12 +151,14 @@
                 }
             }
         }
+
         .FooterRowBottom {
             padding-left: 5em;
             padding-right: 5em;
             font-size: .8em;
             line-height: .3px;
             margin-bottom: 2em;
+
             hr {
                 margin-bottom: 2em;
             }
@@ -142,19 +170,24 @@
 @media all and (min-width: 415px) and (max-width: 576px) {
     .FooterContainer {
         padding: 2em 0 1em 0;
+
         .FooterRow {
             .FooterColumn {
                 display: flex;
                 justify-content: center;
-                h3, p {
+
+                h3,
+                p {
                     display: none;
                 }
+
                 ul {
                     display: flex;
                     justify-content: space-evenly;
                     justify-content: center;
                     width: 100vw;
                     margin-top: 1em;
+
                     li {
                         padding-right: 3em;
                         font-size: .9em;
@@ -163,12 +196,14 @@
                 }
             }
         }
+
         .FooterRowBottom {
             padding-left: 5em;
             padding-right: 5em;
             font-size: .8em;
             line-height: .3px;
             margin-bottom: 2em;
+
             hr {
                 margin-bottom: 2em;
             }
@@ -180,20 +215,25 @@
 @media all and (max-width: 414px) {
     .FooterContainer {
         padding: 2em 0 1em 0;
+
         .FooterRow {
             .FooterColumn {
                 display: flex;
                 justify-content: center;
                 padding-left: 3em;
                 padding-right: 3em;
-                h3, p {
+
+                h3,
+                p {
                     display: none;
                 }
+
                 ul {
                     display: flex;
                     justify-content: space-evenly;
                     width: 100vw;
                     margin-top: 1em;
+
                     li {
                         font-size: .9em;
                         line-height: 2em;
@@ -201,12 +241,14 @@
                 }
             }
         }
+
         .FooterRowBottom {
             padding-left: 2em;
             padding-right: 2em;
             font-size: .8em;
             line-height: .3px;
             margin-bottom: 2em;
+
             hr {
                 margin-bottom: 2em;
             }

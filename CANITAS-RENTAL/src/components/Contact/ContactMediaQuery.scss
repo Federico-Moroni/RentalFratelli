@@ -35,10 +35,12 @@
                 }
                 .DataAndForm {
                     display: flex;
+                    width: 35vw;
                     margin-top: 3em;
                     .DataColumn {
-                        padding-top: .8em;
+                        padding-top: .26em;
                         padding-left: 2em;
+                        display: flex;
                         p {
                             text-align: left;
                         }
@@ -47,7 +49,9 @@
                             padding-left: 0;
                         }
                         .Icons {
-                            padding-top: 4.4em;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
                             li {
                                 width: 2em;
                             }

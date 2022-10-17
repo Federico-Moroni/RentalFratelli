@@ -22,10 +22,10 @@ const Navbar = () => {
             <Row className='NavbarRow'>
                 <Col className='NavbarColumn'>
                     <ul className='NavbarUl'>
-                        <li className='NavbarLi'>Home</li>
-                        <li className='NavbarLi'>Cottages</li>
-                        <li className='NavbarLi'>Activities</li>
-                        <li className='NavbarLi'>Contact</li>
+                        <li className='NavbarLi'><Link className='NavbarLink' to='home' spy={true} smooth={true} offset={0} duration={600}>Home</Link></li>
+                        <li className='NavbarLi'><Link className='NavbarLink' to='cottages' spy={true} smooth={true} offset={0} duration={600}>Cottages</Link></li>
+                        <li className='NavbarLi'><Link className='NavbarLink' to='activities' spy={true} smooth={true} offset={0} duration={600}>Activities</Link></li>
+                        <li className='NavbarLi'><Link className='NavbarLink' to='contact' spy={true} smooth={true} offset={0} duration={600}>Contact</Link></li>
                         <li className='NavbarLiModal'><LoginModal /></li>
                     </ul>
                 </Col>
