@@ -17,6 +17,7 @@ const Activities = () => {
   return (
   <Container fluid className='ActivitiesContainer activities'>
       <div className='ActivitiesImgWrapper'>
+        <h3 className='Title'>Image Gallery</h3>
         <Slider className='SliderContainer'/>
       </div>
   </Container>

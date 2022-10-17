@@ -29,7 +29,7 @@ const Contact = () => {
                 <Col className='ContactFormColumn'>
                     <div className='ContactFormColumnFlex'>
                         <h3 className='Title'>Contact</h3>
-                        <h6>Do not entertain doubts<br/><hr/></h6>
+                        <h6>Send us an email!<br/><hr/></h6>
                         <div className='DataAndForm'>
                             <Col className='DataColumn'>
                                 <div classname='DataColumnFlex'>

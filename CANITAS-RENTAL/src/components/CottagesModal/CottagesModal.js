@@ -31,15 +31,15 @@ import { TbHanger } from "react-icons/tb";
 // Cottages Modal Component:
 export default function CottagesModal (props) {
 
-    function change1A() {
+    const change1A = () => {
         const thumb = img1A
         document.getElementById('mainImg').src = thumb;
     }
-    function change1B() {
+    const change1B = () => {
         const thumb = img1B
         document.getElementById('mainImg').src = thumb;
     }
-    function change2A() {
+    const change2A = () => {
         const thumb = img2A
         document.getElementById('mainImg').src = thumb;
     }

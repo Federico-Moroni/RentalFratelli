@@ -15,14 +15,14 @@ const slides = [
     subtitle: "Rocks",
     description: "Let your dreams come true",
     image:
-      "https://res.cloudinary.com/dfprmjlir/image/upload/v1662422868/CANITAS%20RENTAL/river_bm66rw.jpg"
+      "https://res.cloudinary.com/dfprmjlir/image/upload/v1666026356/CANITAS%20RENTAL/COMPRIMIDAS/river_bm66rw-min_jtvrn6.jpg"
   },
   {
     title: "Autumn",
     subtitle: "Fall",
     description: "A piece of heaven",
     image:
-      "https://res.cloudinary.com/dfprmjlir/image/upload/v1662323994/CANITAS%20RENTAL/home__picture3_ngvn0c.jpg"
+      "https://res.cloudinary.com/dfprmjlir/image/upload/v1666026398/CANITAS%20RENTAL/COMPRIMIDAS/home__picture3_ngvn0c-min_1_vwdvaw.jpg"
   },
   {
     title: "Dirt road",
@@ -36,35 +36,35 @@ const slides = [
     subtitle: "Woods",
     description: "A piece of heaven",
     image:
-      "https://res.cloudinary.com/dfprmjlir/image/upload/v1662660825/CANITAS%20RENTAL/pexels-kaique-rocha-775201_aoaqbs.jpg"
+      "https://res.cloudinary.com/dfprmjlir/image/upload/v1666026352/CANITAS%20RENTAL/COMPRIMIDAS/pexels-kaique-rocha-775201_aoaqbs-min_ajcavd.jpg"
   },
   {
     title: "Road",
     subtitle: "Sunlight",
     description: "Road with a view",
     image:
-      "https://res.cloudinary.com/dfprmjlir/image/upload/v1663006213/CANITAS%20RENTAL/pexels-trace-hudson-6056787_nt4gls.jpg"
+      "https://res.cloudinary.com/dfprmjlir/image/upload/v1666024492/CANITAS%20RENTAL/COMPRIMIDAS/pexels-trace-hudson-6056787_nt4gls-min_ahwwi6.jpg"
   },
   {
     title: "Conifers",
     subtitle: "Pine",
     description: "Mountain forest",
     image:
-      "https://res.cloudinary.com/dfprmjlir/image/upload/v1662944960/CANITAS%20RENTAL/pexels-ays%CC%A7e-o%CC%88zkan-12228823_ubmnhv.jpg"
+      "https://res.cloudinary.com/dfprmjlir/image/upload/v1666026346/CANITAS%20RENTAL/COMPRIMIDAS/pexels-ays%CC%A7e-o%CC%88zkan-12228823_ubmnhv-min_yidf3y.jpg"
   },
   {
     title: "Drone",
     subtitle: "Trees",
     description: "Road view",
     image:
-      "https://res.cloudinary.com/dfprmjlir/image/upload/v1662323972/CANITAS%20RENTAL/home__picture5_rhpmqk.jpg"
+      "https://res.cloudinary.com/dfprmjlir/image/upload/v1665956135/CANITAS%20RENTAL/COMPRIMIDAS/pexels-mali-maeder-109679_po2icn-min_1_nxlgp3.jpg"
   },
   {
     title: "Mountain",
     subtitle: "Cloudy",
     description: "Mountain hike",
     image:
-      "https://res.cloudinary.com/dfprmjlir/image/upload/v1662323978/CANITAS%20RENTAL/home__picture4_spwpxi.jpg"
+      "https://res.cloudinary.com/dfprmjlir/image/upload/v1665956106/CANITAS%20RENTAL/COMPRIMIDAS/pexels-rido-alwarno-1034887_nmkd5u-min_h0iypc.jpg"
   }
 ];
 
