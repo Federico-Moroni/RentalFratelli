@@ -88,8 +88,9 @@
                 }
             }
             .ContactFormColumn {
-                padding-left: 2em;
-                padding-right: 2em;
+                .ContactFormColumnFlex{
+                    width: 100%;
+                }
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
@@ -104,7 +105,6 @@
                     width: 65vw;
                     .DataColumn {
                         padding-top: .8em;
-                        padding-left: 2em;
                         p {
                             text-align: left;
                         }
@@ -152,6 +152,9 @@
             .ContactFormColumn {
                 padding-left: 2em;
                 padding-right: 2em;
+                .ContactFormColumnFlex{
+                    width: 100%;
+                }
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
@@ -166,7 +169,6 @@
                     width: 80vw;
                     .DataColumn {
                         padding-top: .8em;
-                        padding-left: 2em;
                         p {
                             text-align: left;
                         }
@@ -194,7 +196,7 @@
         height: 225vh;
         padding-top: 4em;
         .ContactRow {
-            padding: 2em;
+            padding: 6em 2em 2em 2em;
             height: auto;
             width: 90vw;
             box-shadow:
@@ -214,6 +216,12 @@
             .ContactFormColumn {
                 padding-left: 2em;
                 padding-right: 2em;
+                .ContactFormColumnFlex{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
@@ -223,8 +231,10 @@
                     padding-left: 4em;
                 }
                 .DataAndForm {
-                    margin-top: 3em;
                     width: 60vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     .DataColumn {
                         display: flex;
                         justify-content: center;
@@ -274,6 +284,9 @@
             .ContactFormColumn {
                 padding-left: 2em;
                 padding-right: 2em;
+                .ContactFormColumnFlex{
+                    width: 100%;
+                }
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
@@ -334,6 +347,9 @@
             .ContactFormColumn {
                 padding-left: 2em;
                 padding-right: 2em;
+                .ContactFormColumnFlex{
+                    width: 100%;
+                }
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;

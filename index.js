@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+const PORT = process.env.PORT||3001;
 require('dotenv').config() // Te conectas al archivo .env
 
 const app = express();
@@ -9,6 +10,10 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
+
+app.listen(PORT,()=>{
+    console.log(`Server starting at port ${PORT}`)
+})
 
 app.get('/',()=>{
     resizeBy.send('Welcome to my forma')
@@ -56,8 +61,3 @@ app.post('/api/forma', (req, res) => {
     })
 
 // Port of listening
-
-const PORT = process.env.PORT||3001;
-app.listen(PORT,()=>{
-    console.log(`Server starting at port ${PORT}`)
-})

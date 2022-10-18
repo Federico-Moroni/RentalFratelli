@@ -12,16 +12,18 @@
         }
         .ContactFormColumn {
             display: flex;
+            width: 40vw;
             justify-content: center;
             align-items: center;
             .ContactFormColumnFlex {
+                width: 44vw;
                 .Title {
                     font-family: romantica;
                     color: black;
                     text-align: center;
                 }
                 .DataAndForm {
-                    width: 46vw;
+                    width: 100%;
                     .DataColumn {
                         overflow: hidden;
                         display: flex;
