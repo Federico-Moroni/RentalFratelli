@@ -1,13 +1,10 @@
 {
-  "homepage":"http://Federico-Moroni.github.io/RentalFratelli",
   "name": "canitas-rental-server",
   "version": "1.0.0",
   "description": "form",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
     "server": "nodemon index.js",
     "client": "npm start --prefix CANITAS-RENTAL",
     "dev": "concurrently \"npm run server\" \"npm run client\""
