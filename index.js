@@ -11,13 +11,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
 
-app.listen(PORT,()=>{
+app.listen(PORT, ()=>{
     console.log(`Server starting at port ${PORT}`)
 })
 
-app.get('/',()=>{
-    resizeBy.send('Welcome to my forma')
-})
+app.get('/',(req, res)=>{
+    res.status(200).send('Welcome to my forma');
+});
 
 app.post('/api/forma', (req, res) => {
     let data = req.body
@@ -48,16 +48,14 @@ app.post('/api/forma', (req, res) => {
     <p>${data.message}</p>
         `
     };
-
-    smtpTransport.sendMail(mailOptions, (error,response)=>{
+    
+    smtpTransport.sendMail(mailOptions, (error, response)=>{
         if(error) {
-            res.send(error)
+            res.send(JSON.stringify(smtpTransport), error)
         }
         else {
-            res.send('Success')
+            res.status(200).send('Success')
         }
     })
     smtpTransport.close();
     })
-
-// Port of listening
