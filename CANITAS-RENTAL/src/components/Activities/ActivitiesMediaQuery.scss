@@ -85,7 +85,7 @@
 }
 
 // IPHONE 6/7/8 DEVICES [AN EXCEPTION]
-@media all and (min-width: 374px) and (max-width: 399px) {
+@media all and (max-width: 399px) {
     .ActivitiesContainer {
         height: 110vh;
         z-index: -5;
