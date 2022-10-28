@@ -272,16 +272,15 @@
 }
 
 // IPHONE 6/7/8 PLUS DEVICES [AN EXCEPTION]
-@media all and (min-width: 400px) and (max-width: 414px) {
+@media all and (max-width: 414px) {
     .CottagesContainer {
-        height: 185vh;
-        margin-bottom: 1em;
+        height: 190vh;
 
         .CottagesRow {
+            background-color: rgb(222, 224, 220);
             padding: 2em;
             height: 85vh;
             width: 100vw;
-            margin-top: 1em;
             .ImagesCol {
                 height: 75vh;
                 .Cottage01, .Cottage02 {
@@ -301,14 +300,11 @@
             }
 
             .InfoCol {
-                margin-top: 5em;
+                margin-top: 11vh;
                 border-radius: .5em;
-                height: 90vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                height: fit-content;
                 .TextRow {
+                    margin-top: 6vh;
                     .Title {
                         font-size: 3em;
                     }
@@ -316,66 +312,6 @@
                         padding: 0 3%;
                     }
                 }
-                .FormRow {
-                    height: fit-content;
-                }
-            }
-        }
-    }
-}
-
-// IPHONE 6/7/8 DEVICES [AN EXCEPTION]
-@media all and (max-width: 399px) {
-    .CottagesContainer {
-        height: 185vh;
-        margin-bottom: 1em;
-
-        .CottagesRow {
-            padding: 2em;
-            height: 85vh;
-            width: 100vw;
-            margin-top: 1em;
-
-            .ImagesCol {
-                height: 75vh;
-
-                .Cottage01,
-                .Cottage02 {
-                    height: 36.58vh;
-                    margin-top: .5em;
-                }
-
-                .Cottage01 {
-                    background-position: center 70%;
-                    border-radius: .5em .5em 0 0;
-
-                }
-
-                .Cottage02 {
-                    background-position: center 60%;
-                    border-radius: 0 0 .5em .5em;
-                }
-            }
-
-            .InfoCol {
-                margin-top: 5em;
-                border-radius: .5em;
-                height: 95vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                .TextRow {
-                    .Title {
-                        font-size: 3em;
-                    }
-
-                    .Text {
-                        padding: 0 3%;
-                    }
-                }
-
                 .FormRow {
                     height: fit-content;
                 }

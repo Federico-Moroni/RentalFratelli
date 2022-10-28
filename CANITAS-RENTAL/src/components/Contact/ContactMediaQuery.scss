@@ -321,13 +321,15 @@
 }
 
 // IPHONE 6/7/8 PLUS DEVICES [AN EXCEPTION]
-@media all and (min-width: 400px) and (max-width: 414px) {
+@media all and (max-width: 414px) {
     .ContactContainer {
         width: 100vw;
         height: 245vh;
-        padding-top: 4em;
+        padding-top: 2em;
+        display: flex;
+        align-items: center;
         .ContactRow {
-            padding: 2em;
+            padding: 1em 2em;
             height: auto;
             width: 90vw;
             box-shadow:
@@ -336,7 +338,7 @@
             border-radius: 1em;
             .ContactImgColumn {
                 padding: 0;
-                height: 72vh;
+                height: 60vh;
                 .ContactImg {
                     height: 100%;
                     width: 100%;
@@ -345,19 +347,19 @@
                 }
             }
             .ContactFormColumn {
-                height: 160vh;
-                padding-left: 2em;
-                padding-right: 2em;
+                padding-left: .5em;
+                padding-right: .5em;
                 .ContactFormColumnFlex{
                     width: 100%;
                 }
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
+                    margin-top: .5em;
                 }
                 .DataAndForm {
                     margin-top: 3em;
-                    width: 65vw;
+                    width: 85vw;
                     .DataColumn {
                         display: flex;
                         justify-content: center;
@@ -372,77 +374,6 @@
                                 li {
                                     width: 2em;
                                 }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-// IPHONE 6/7/8 DEVICES [AN EXCEPTION]
-@media all and (max-width: 399px) {
-    .ContactContainer {
-        width: 100vw;
-        height: 270vh;
-        padding-top: 4em;
-
-        .ContactRow {
-            padding: 2em;
-            height: auto;
-            width: 90vw;
-            box-shadow:
-                rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-                rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-            border-radius: 1em;
-
-            .ContactImgColumn {
-                padding: 0;
-                height: 72vh;
-
-                .ContactImg {
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 1em;
-                    padding: 0;
-                }
-            }
-
-            .ContactFormColumn {
-                height: 180vh;
-                padding-left: 2em;
-                padding-right: 2em;
-
-                .ContactFormColumnFlex {
-                    width: 100%;
-                }
-
-                .Title {
-                    font-size: 3em;
-                    margin-bottom: .4em;
-                }
-
-                .DataAndForm {
-                    margin-top: 3em;
-                    width: 65vw;
-
-                    .DataColumn {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding-top: .8em;
-
-                        ul {
-                            padding-left: 0;
-                        }
-
-                        .Icons {
-                            padding-top: 2em;
-                            justify-content: center;
-
-                            li {
-                                width: 2em;
-                            }
                         }
                     }
                 }
