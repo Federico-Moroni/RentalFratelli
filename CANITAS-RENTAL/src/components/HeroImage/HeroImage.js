@@ -6,7 +6,7 @@ import './HeroImageMediaQuery.scss'
 // React import:
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-
+import imgHero from '../../Assets/Images/hero.jpg'
 
 /* COMPONENTS */
 
@@ -17,7 +17,7 @@ const HeroImage = () => {
         <Container fluid className='HeroImageContainer'>
             <Row>
                 <Col className='HeroCol'>
-                    <img src='https://res.cloudinary.com/dfprmjlir/image/upload/v1662321866/CANITAS%20RENTAL/home__picture_jlbdjq.jpg' className='HeroImg' alt=''></img>
+                    <img src={imgHero} className='HeroImg' alt='HeroImage'></img>
                     <div className='GlassEffectContainer'>
                         <div className='GlassEffect'></div>
                     </div>

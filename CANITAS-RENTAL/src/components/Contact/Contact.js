@@ -13,7 +13,7 @@ import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaInstagramSquare, FaWhatsappSquare } from "react-icons/fa";
-
+import imgS7 from '../../Assets/Images/S7.jpg'
 
 /* COMPONENTS */
 
@@ -24,7 +24,7 @@ const Contact = () => {
         <Container fluid className='ContactContainer contact'>
             <Row className='ContactRow'>
                 <Col xl={5} className='ContactImgColumn'>
-                    <img className='ContactImg' src='https://res.cloudinary.com/dfprmjlir/image/upload/v1665956106/CANITAS%20RENTAL/COMPRIMIDAS/pexels-rido-alwarno-1034887_nmkd5u-min_h0iypc.jpg'></img>
+                    <img className='ContactImg' src={imgS7}></img>
                 </Col>
                 <Col className='ContactFormColumn'>
                     <div className='ContactFormColumnFlex'>
