@@ -68,15 +68,36 @@
 }
 
 // IPHONE 6/7/8 PLUS DEVICES [AN EXCEPTION]
-@media all and (max-width: 414px) {
+@media all and (min-width: 400px) and (max-width: 414px) {
     .ActivitiesContainer {
-        height: 100vh;
+        height: 105vh;
         z-index: -5;
         --bs-gutter-x: 0;
 
         .ActivitiesImgWrapper {
             height: 100vh;
             padding-top: 10vh;
+            .Title {
+                margin-bottom: 1em;
+                }
+        }
+    }
+}
+
+// IPHONE 6/7/8 DEVICES [AN EXCEPTION]
+@media all and (min-width: 374px) and (max-width: 399px) {
+    .ActivitiesContainer {
+        height: 110vh;
+        z-index: -5;
+        --bs-gutter-x: 0;
+
+        .ActivitiesImgWrapper {
+            height: 100vh;
+            padding-top: 10vh;
+
+            .Title {
+                margin-bottom: 1em;
+            }
         }
     }
 }
