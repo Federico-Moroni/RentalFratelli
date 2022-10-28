@@ -1,23 +1,22 @@
 const express = require('express');
+const app = express();
+const path = require('path');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const PORT = process.env.PORT||3001;
-require('dotenv').config() // Te conectas al archivo .env
-
-const app = express();
+const PORT = process.env.PORT || 3001;
+require('dotenv').config(); // Te conectas al archivo .env
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
-
-app.listen(PORT, ()=>{
-    console.log(`Server starting at port ${PORT}`)
-})
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/',(req, res)=>{
-    res.status(200).send('Welcome to my forma');
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+
+// FORM // 
 
 app.post('/api/forma', (req, res) => {
     let data = req.body
@@ -48,10 +47,10 @@ app.post('/api/forma', (req, res) => {
     <p>${data.message}</p>
         `
     };
-    
-    smtpTransport.sendMail(mailOptions, (error, response)=>{
+
+    smtpTransport.sendMail(mailOptions, (error, res)=>{
         if(error) {
-            res.send(JSON.stringify(smtpTransport), error)
+            res.send(error)
         }
         else {
             res.status(200).send('Success')
@@ -59,3 +58,7 @@ app.post('/api/forma', (req, res) => {
     })
     smtpTransport.close();
     })
+
+    app.listen(PORT, ()=>{
+    console.log(`Server starting at port ${PORT}`);
+    });
