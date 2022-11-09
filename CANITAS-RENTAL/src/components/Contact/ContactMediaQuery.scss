@@ -1,20 +1,25 @@
 // // X-LARGE DEVICES [XL]
 @media all and (min-width: 1200px) {
     .ContactContainer {
+        align-items: center;
         width: 100vw;
         height: 100vh;
-        align-items: center;
+        margin-bottom: 5em;
+        margin-top: 5em;
+
         .ContactRow {
             padding: 2em;
-            height: 85vh;
+            height: auto;
             width: 90vw;
             box-shadow:
                 rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
                 rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
             border-radius: 1em;
+
             .ContactImgColumn {
                 padding: 0;
                 height: 78vh;
+
                 .ContactImg {
                     height: 100%;
                     width: 100%;
@@ -22,36 +27,45 @@
                     padding: 0;
                 }
             }
+
             .ContactFormColumn {
                 padding-left: 2em;
                 padding-right: 2em;
+
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
                 }
+
                 h6 {
                     padding-right: 9em;
                     padding-left: 9em;
                 }
+
                 .DataAndForm {
                     display: flex;
                     width: 35vw;
                     margin-top: 3em;
+
                     .DataColumn {
                         padding-top: .26em;
                         display: flex;
                         margin-right: 2em;
+
                         p {
                             text-align: left;
                         }
+
                         ul {
                             text-align: left;
                             padding-left: 0;
                         }
+
                         .Icons {
                             display: flex;
                             justify-content: flex-start;
                             align-items: center;
+
                             li {
                                 width: 2em;
                             }
@@ -67,19 +81,22 @@
 @media all and (min-width: 993px) and (max-width: 1199px) {
     .ContactContainer {
         width: 100vw;
-        height: 180vh;
+        height: auto;
         padding-top: 4em;
+
         .ContactRow {
             padding: 2em;
-            height: 170vh;
+            height: auto;
             width: 90vw;
             box-shadow:
                 rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
                 rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
             border-radius: 1em;
+
             .ContactImgColumn {
                 padding: 0;
                 height: 72vh;
+
                 .ContactImg {
                     height: 100%;
                     width: 100%;
@@ -87,33 +104,44 @@
                     padding: 0;
                 }
             }
+
             .ContactFormColumn {
-                .ContactFormColumnFlex{
+                margin-top: 2em;
+
+                .ContactFormColumnFlex {
                     width: 100%;
                 }
+
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
                 }
+
                 h6 {
                     padding-right: 9em;
                     padding-left: 9em;
                 }
+
                 .DataAndForm {
                     display: flex;
                     margin-top: 3em;
                     width: 65vw;
+
                     .DataColumn {
                         padding-top: .8em;
+
                         p {
                             text-align: left;
                         }
+
                         ul {
                             text-align: left;
                             padding-left: 0;
                         }
+
                         .Icons {
                             padding-top: 4em;
+
                             li {
                                 width: 2em;
                             }
@@ -129,19 +157,22 @@
 @media all and (min-width: 769px) and (max-width: 992px) {
     .ContactContainer {
         width: 100vw;
-        height: 185vh;
+        height: auto;
         padding-top: 4em;
+
         .ContactRow {
             padding: 2em;
-            height: 170vh;
+            height: auto;
             width: 90vw;
             box-shadow:
                 rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
                 rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
             border-radius: 1em;
+
             .ContactImgColumn {
                 padding: 0;
                 height: 72vh;
+
                 .ContactImg {
                     height: 100%;
                     width: 100%;
@@ -149,35 +180,46 @@
                     padding: 0;
                 }
             }
+
             .ContactFormColumn {
                 padding-left: 2em;
                 padding-right: 2em;
-                .ContactFormColumnFlex{
+                margin-top: 2em;
+
+                .ContactFormColumnFlex {
                     width: 100%;
                 }
+
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
                 }
+
                 h6 {
                     padding-right: 9em;
                     padding-left: 9em;
                 }
+
                 .DataAndForm {
                     display: flex;
                     margin-top: 3em;
                     width: 80vw;
+
                     .DataColumn {
                         padding-top: .8em;
+
                         p {
                             text-align: left;
                         }
+
                         ul {
                             text-align: left;
                             padding-left: 0;
                         }
+
                         .Icons {
                             padding-top: 3em;
+
                             li {
                                 width: 2em;
                             }
@@ -193,19 +235,22 @@
 @media all and (min-width: 577px) and (max-width: 768px) {
     .ContactContainer {
         width: 100vw;
-        height: 225vh;
-        padding-top: 4em;
+        height: auto;
+        padding-top: 2em;
+
         .ContactRow {
-            padding: 6em 2em 2em 2em;
+            padding: 2em 2em 2em 2em;
             height: auto;
             width: 90vw;
             box-shadow:
                 rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
                 rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
             border-radius: 1em;
+
             .ContactImgColumn {
                 padding: 0;
                 height: 72vh;
+
                 .ContactImg {
                     height: 100%;
                     width: 100%;
@@ -213,42 +258,52 @@
                     padding: 0;
                 }
             }
+
             .ContactFormColumn {
                 padding-left: 2em;
                 padding-right: 2em;
-                .ContactFormColumnFlex{
+                margin-top: 2em;
+
+                .ContactFormColumnFlex {
                     width: 90%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                 }
+
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
                 }
+
                 h6 {
                     padding-right: 4em;
                     padding-left: 4em;
                 }
+
                 .DataAndForm {
                     width: 60vw;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+
                     .DataColumn {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         padding-top: .8em;
-                            ul {
-                                padding-left: 0;
+
+                        ul {
+                            padding-left: 0;
+                        }
+
+                        .Icons {
+                            padding-top: 2em;
+                            justify-content: center;
+
+                            li {
+                                width: 2em;
                             }
-                            .Icons {
-                                padding-top: 2em;
-                                justify-content: center;
-                                li {
-                                    width: 2em;
-                                }
                         }
                     }
                 }
@@ -261,8 +316,9 @@
 @media all and (min-width: 415px) and (max-width: 576px) {
     .ContactContainer {
         width: 100vw;
-        height: 225vh;
+        height: auto;
         padding-top: 4em;
+
         .ContactRow {
             padding: 2em;
             height: auto;
@@ -271,9 +327,11 @@
                 rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
                 rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
             border-radius: 1em;
+
             .ContactImgColumn {
                 padding: 0;
                 height: 72vh;
+
                 .ContactImg {
                     height: 100%;
                     width: 100%;
@@ -281,37 +339,47 @@
                     padding: 0;
                 }
             }
+
             .ContactFormColumn {
                 padding-left: 2em;
                 padding-right: 2em;
-                .ContactFormColumnFlex{
+                margin-top: 2em;
+
+                .ContactFormColumnFlex {
                     width: 100%;
                 }
+
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
                 }
+
                 h6 {
                     padding-right: 4em;
                     padding-left: 4em;
                 }
+
                 .DataAndForm {
                     margin-top: 3em;
                     width: 70vw;
+
                     .DataColumn {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         padding-top: .8em;
-                            ul {
-                                padding-left: 0;
+
+                        ul {
+                            padding-left: 0;
+                        }
+
+                        .Icons {
+                            padding-top: 2em;
+                            justify-content: center;
+
+                            li {
+                                width: 2em;
                             }
-                            .Icons {
-                                padding-top: 2em;
-                                justify-content: center;
-                                li {
-                                    width: 2em;
-                                }
                         }
                     }
                 }
@@ -324,10 +392,11 @@
 @media all and (max-width: 414px) {
     .ContactContainer {
         width: 100vw;
-        height: 245vh;
+        height: auto;
         padding-top: 2em;
         display: flex;
         align-items: center;
+
         .ContactRow {
             padding: 1em 2em;
             height: auto;
@@ -336,9 +405,11 @@
                 rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
                 rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
             border-radius: 1em;
+
             .ContactImgColumn {
                 padding: 0;
                 height: 60vh;
+
                 .ContactImg {
                     height: 100%;
                     width: 100%;
@@ -346,34 +417,42 @@
                     padding: 0;
                 }
             }
+
             .ContactFormColumn {
                 padding-left: .5em;
                 padding-right: .5em;
-                .ContactFormColumnFlex{
+
+                .ContactFormColumnFlex {
                     width: 100%;
                 }
+
                 .Title {
                     font-size: 3em;
                     margin-bottom: .4em;
                     margin-top: .5em;
                 }
+
                 .DataAndForm {
                     margin-top: 3em;
                     width: 85vw;
+
                     .DataColumn {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         padding-top: .8em;
-                            ul {
-                                padding-left: 0;
+
+                        ul {
+                            padding-left: 0;
+                        }
+
+                        .Icons {
+                            padding-top: 2em;
+                            justify-content: center;
+
+                            li {
+                                width: 2em;
                             }
-                            .Icons {
-                                padding-top: 2em;
-                                justify-content: center;
-                                li {
-                                    width: 2em;
-                                }
                         }
                     }
                 }

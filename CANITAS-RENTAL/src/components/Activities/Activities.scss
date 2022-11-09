@@ -6,11 +6,13 @@
     z-index: -5;
     --bs-gutter-x: 0;
     overflow: hidden;
+
     .ActivitiesImgWrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        .Title{
+
+        .Title {
             font-family: romantica;
             font-size: 3em;
             margin-bottom: 1em;

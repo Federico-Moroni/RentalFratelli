@@ -5,6 +5,7 @@
     .slide[data-active] {
         pointer-events: auto;
         z-index: 2;
+
         // Foto Activa
         .slideContent {
             &:hover {
@@ -22,6 +23,7 @@
         border: none;
         color: rgb(22, 56, 22);
         position: relative;
+
         &:focus {
             outline: none;
         }
@@ -36,6 +38,7 @@
         align-content: flex-end;
         transform-style: preserve-3d;
         cursor: pointer;
+
         .slideContentInner {
             color: white;
 
@@ -45,6 +48,7 @@
                 text-transform: uppercase;
                 text-shadow: 2px 2px #5d5d5d;
             }
+
             .slideSubtitle::before {
                 content: "— ";
             }

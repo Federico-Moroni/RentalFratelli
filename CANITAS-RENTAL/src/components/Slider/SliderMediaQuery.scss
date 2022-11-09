@@ -5,16 +5,20 @@
             grid-area: 1 / -1;
             height: 60vh;
         }
+
         .slide[data-active] {
             height: 75vh;
+
             .slideContentInner {
                 opacity: 1;
             }
+
             // Foto Activa
             .slideContent {
                 --x: calc(var(--px) - 0.5);
                 opacity: 1;
                 width: 23vw;
+
                 &:hover {
                     transform: perspective(1000px) rotateY(calc(var(--x) * 45deg));
                 }
@@ -28,13 +32,16 @@
             z-index: 10;
             transition: opacity 0.2s;
             opacity: 0.6;
+
             &:hover {
                 opacity: 1;
             }
+
             &:first-child {
                 left: -5rem;
                 bottom: 44vh;
             }
+
             &:last-child {
                 right: 0%;
                 bottom: 54vh;
@@ -49,6 +56,7 @@
             transform: perspective(1600px) translateX(calc(110% * var(--offset))) rotateY(calc(-50deg * var(--dir)));
             box-shadow: rgba(157, 157, 157, 0.5) 0px 22px 70px 4px;
             border-radius: 5px;
+
             .slideContentInner {
                 margin-bottom: 5vh;
                 text-shadow: 0 0.1rem 1rem #000;
@@ -61,6 +69,7 @@
                     letter-spacing: 0.2ch;
                     margin: 0;
                     font-weight: 500;
+
                     hr {
                         border: .5px solid white;
                         width: 20%;
@@ -68,6 +77,7 @@
                         margin-left: 40%;
                     }
                 }
+
                 .slideDescription {
                     margin: 0;
                     font-size: 0.8rem;
@@ -86,16 +96,20 @@
             grid-area: 1 / -1;
             height: 55vh;
         }
+
         .slide[data-active] {
             height: 70vh;
+
             .slideContentInner {
                 opacity: 1;
             }
+
             // Foto Activa
             .slideContent {
                 --x: calc(var(--px) - 0.5);
                 opacity: 1;
                 width: 28vw;
+
                 &:hover {
                     transform: perspective(1000px) rotateY(calc(var(--x) * 45deg));
                 }
@@ -109,13 +123,16 @@
             z-index: 10;
             transition: opacity 0.2s;
             opacity: 0.6;
+
             &:hover {
                 opacity: 1;
             }
+
             &:first-child {
                 left: -5rem;
                 bottom: 42vh;
             }
+
             &:last-child {
                 right: 0%;
                 bottom: 52vh;
@@ -130,6 +147,7 @@
             transform: perspective(1600px) translateX(calc(106% * var(--offset))) rotateY(calc(-50deg * var(--dir)));
             box-shadow: rgba(157, 157, 157, 0.5) 0px 22px 70px 4px;
             border-radius: 5px;
+
             .slideContentInner {
                 margin-bottom: 5vh;
                 text-shadow: 0 0.1rem 1rem #000;
@@ -142,6 +160,7 @@
                     letter-spacing: 0.2ch;
                     margin: 0;
                     font-weight: 500;
+
                     hr {
                         border: .5px solid white;
                         width: 20%;
@@ -149,6 +168,7 @@
                         margin-left: 40%;
                     }
                 }
+
                 .slideDescription {
                     margin: 0;
                     font-size: 0.8rem;
@@ -167,11 +187,14 @@
             grid-area: 1 / -1;
             height: 55vh;
         }
+
         .slide[data-active] {
             height: 70vh;
+
             .slideContentInner {
                 opacity: 1;
             }
+
             // Foto Activa
             .slideContent {
                 --x: calc(var(--px) - 0.5);
@@ -187,13 +210,16 @@
             z-index: 10;
             transition: opacity 0.2s;
             opacity: 0.6;
+
             &:hover {
                 opacity: 1;
             }
+
             &:first-child {
                 left: -5rem;
                 bottom: 41vh;
             }
+
             &:last-child {
                 right: 0%;
                 bottom: 51vh;
@@ -208,6 +234,7 @@
             transform: perspective(1600px) translateX(calc(110% * var(--offset))) rotateY(calc(-50deg * var(--dir)));
             box-shadow: rgba(157, 157, 157, 0.5) 0px 22px 70px 4px;
             border-radius: 5px;
+
             .slideContentInner {
                 margin-bottom: 5vh;
                 text-shadow: 0 0.1rem 1rem #000;
@@ -220,6 +247,7 @@
                     letter-spacing: 0.2ch;
                     margin: 0;
                     font-weight: 500;
+
                     hr {
                         border: .5px solid white;
                         width: 20%;
@@ -227,6 +255,7 @@
                         margin-left: 40%;
                     }
                 }
+
                 .slideDescription {
                     margin: 0;
                     font-size: 0.8rem;
@@ -245,11 +274,14 @@
             grid-area: 1 / -1;
             height: 60vh;
         }
+
         .slide[data-active] {
             height: 75vh;
+
             .slideContentInner {
                 opacity: 1;
             }
+
             // Foto Activa
             .slideContent {
                 --x: calc(var(--px) - 0.5);
@@ -265,13 +297,16 @@
             z-index: 10;
             transition: opacity 0.2s;
             opacity: 0.6;
+
             &:hover {
                 opacity: 1;
             }
+
             &:first-child {
                 left: -5rem;
                 bottom: 44vh;
             }
+
             &:last-child {
                 right: 0%;
                 bottom: 54vh;
@@ -286,6 +321,7 @@
             transform: perspective(1600px) translateX(calc(106% * var(--offset))) rotateY(calc(-50deg * var(--dir)));
             box-shadow: rgba(157, 157, 157, 0.5) 0px 22px 70px 4px;
             border-radius: 5px;
+
             .slideContentInner {
                 margin-bottom: 5vh;
                 text-shadow: 0 0.1rem 1rem #000;
@@ -298,6 +334,7 @@
                     letter-spacing: 0.2ch;
                     margin: 0;
                     font-weight: 500;
+
                     hr {
                         border: .5px solid white;
                         width: 20%;
@@ -305,6 +342,7 @@
                         margin-left: 40%;
                     }
                 }
+
                 .slideDescription {
                     margin: 0;
                     font-size: 0.8rem;
@@ -317,17 +355,20 @@
 }
 
 // XS DEVICES [-]
-@media all and (min-width: 415px) and (max-width: 576px){
+@media all and (min-width: 415px) and (max-width: 576px) {
     .slides {
         >.slide {
             grid-area: 1 / -1;
             height: 50vh;
         }
+
         .slide[data-active] {
             height: 80vh;
+
             .slideContentInner {
                 opacity: 1;
             }
+
             // Foto Activa
             .slideContent {
                 --x: calc(var(--px) - 0.5);
@@ -343,13 +384,16 @@
             z-index: 10;
             transition: opacity 0.2s;
             opacity: 0.6;
+
             &:hover {
                 opacity: 1;
             }
+
             &:first-child {
                 left: -5rem;
                 bottom: 45vh;
             }
+
             &:last-child {
                 right: 0%;
                 bottom: 56vh;
@@ -364,6 +408,7 @@
             transform: perspective(1600px) translateX(calc(110% * var(--offset))) rotateY(calc(-50deg * var(--dir)));
             box-shadow: rgba(157, 157, 157, 0.5) 0px 22px 70px 4px;
             border-radius: 5px;
+
             .slideContentInner {
                 margin-bottom: 5vh;
                 text-shadow: 0 0.1rem 1rem #000;
@@ -376,6 +421,7 @@
                     letter-spacing: 0.2ch;
                     margin: 0;
                     font-weight: 500;
+
                     hr {
                         border: .5px solid white;
                         width: 20%;
@@ -383,6 +429,7 @@
                         margin-left: 40%;
                     }
                 }
+
                 .slideDescription {
                     margin: 0;
                     font-size: 0.8rem;
@@ -401,11 +448,14 @@
             grid-area: 1 / -1;
             height: 50vh;
         }
+
         .slide[data-active] {
             height: 80vh;
+
             .slideContentInner {
                 opacity: 1;
             }
+
             // Foto Activa
             .slideContent {
                 --x: calc(var(--px) - 0.5);
@@ -421,13 +471,16 @@
             z-index: 10;
             transition: opacity 0.2s;
             opacity: 0.6;
+
             &:hover {
                 opacity: 1;
             }
+
             &:first-child {
                 left: -5rem;
                 bottom: 45vh;
             }
+
             &:last-child {
                 right: 0%;
                 bottom: 56vh;
@@ -442,6 +495,7 @@
             transform: perspective(1600px) translateX(calc(110% * var(--offset))) rotateY(calc(-50deg * var(--dir)));
             box-shadow: rgba(157, 157, 157, 0.5) 0px 22px 70px 4px;
             border-radius: 5px;
+
             .slideContentInner {
                 margin-bottom: 5vh;
                 text-shadow: 0 0.1rem 1rem #000;
@@ -454,6 +508,7 @@
                     letter-spacing: 0.2ch;
                     margin: 0;
                     font-weight: 500;
+
                     hr {
                         border: .5px solid white;
                         width: 20%;
@@ -461,6 +516,7 @@
                         margin-left: 40%;
                     }
                 }
+
                 .slideDescription {
                     margin: 0;
                     font-size: 0.8rem;
